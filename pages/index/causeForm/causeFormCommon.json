@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "pleadings-tab-nav": "pages\\index\\causeForm\\components\\pleadings-tab-nav\\pleadings-tab-nav",
+    "uni-forms": "pages\\index\\causeForm\\components\\uni-forms\\uni-forms",
+    "uni-forms-item": "pages\\index\\causeForm\\components\\uni-forms-item\\uni-forms-item",
+    "uni-easyinput": "pages\\index\\causeForm\\components\\uni-easyinput\\uni-easyinput",
+    "picker-select": "pages\\index\\causeForm\\components\\picker-select\\picker-select",
+    "picker-date": "pages\\index\\causeForm\\components\\picker-date\\picker-date",
+    "uni-data-checkbox": "pages\\index\\causeForm\\components\\uni-data-checkbox\\uni-data-checkbox",
+    "date-range-picker": "pages\\index\\causeForm\\components\\date-range-picker\\date-range-picker"
+  }
+}

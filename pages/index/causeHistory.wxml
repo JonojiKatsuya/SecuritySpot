@@ -1,0 +1,20 @@
+<view class="container data-v-3167e443">
+    <view class="title data-v-3167e443">
+        <image class="data-v-3167e443" mode="aspectFill" src="/static/cause/banner_bg@2x.png"></image>
+        <view class="title-content data-v-3167e443">
+            <text class="data-v-3167e443">我的文书</text>
+        </view>
+    </view>
+    <view class="content data-v-3167e443">
+        <uni-swipe-action bind:__l="__l" class="data-v-3167e443" vueId="7e7b26e5-1" vueSlots="{{['default']}}">
+            <uni-swipe-action-item bind:__l="__l" bind:click="__e" class="data-v-3167e443" data-event-opts="{{[ [ '^click',[ [ 'handleClick',['$0','$event'],[ [ ['list','',index] ] ] ] ] ] ]}}" rightOptions="{{rightOptions}}" vueId="{{'7e7b26e5-2-'+index+','+'7e7b26e5-1'}}" vueSlots="{{['default']}}" wx:for="{{list}}" wx:key="index">
+                <view bindtap="__e" class="swipe-content data-v-3167e443" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetail',['$0'],[ [ ['list','',index] ] ] ] ] ] ]}}">
+                    <view class="swipe-content-text data-v-3167e443">
+                        <view class="swipe-content-name data-v-3167e443">{{item.complaintName}}</view>
+                        <view class="swipe-content-time data-v-3167e443">{{item.createUpdateTime}}</view>
+                    </view>
+                </view>
+            </uni-swipe-action-item>
+        </uni-swipe-action>
+    </view>
+</view>

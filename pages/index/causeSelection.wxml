@@ -1,0 +1,37 @@
+<view class="container data-v-61cf25bc">
+    <view class="title data-v-61cf25bc">
+        <image class="data-v-61cf25bc" mode="aspectFill" src="/static/cause/banner_bg@2x.png"></image>
+        <view class="title-content data-v-61cf25bc">
+            <text class="data-v-61cf25bc">要素式起诉状</text>
+            <view class="title-tips data-v-61cf25bc">为了能够协助您快速填写，需要先进行以下信息的确认</view>
+        </view>
+    </view>
+    <view class="content data-v-61cf25bc">
+        <view class="case-select data-v-61cf25bc">
+            <view class="case-select-label data-v-61cf25bc">起诉的案由</view>
+            <view class="picker-box data-v-61cf25bc">
+                <picker bindchange="__e" class="data-v-61cf25bc" data-event-opts="{{[ [ 'change',[ [ 'bindPickerChange',['$event'] ] ] ] ]}}" mode="selector" range="{{causeList}}" rangeKey="name" value="{{cause}}">
+                    <view class="{{['picker-input','data-v-61cf25bc',cause===-1?'cause-placeholder':'']}}">{{''+(cause===-1?'请选择您要起诉的案由':causeList[cause].name)}}</view>
+                </picker>
+            </view>
+            <image mode class="case-select-more data-v-61cf25bc" src="/static/cause/icon_more@2x.png"></image>
+        </view>
+        <view class="empty-tips data-v-61cf25bc" wx:if="{{cause===-1}}">
+            <view class="empty-tips-content data-v-61cf25bc">
+                <image class="case-select-more data-v-61cf25bc" src="/static/cause/empty_bg@2x.png"></image>
+                <text class="data-v-61cf25bc">请选择起诉案由</text>
+            </view>
+        </view>
+        <uni-forms bind:__l="__l" class="data-v-61cf25bc vue-ref" data-ref="form" labelPosition="top" model="{{formData}}" vueId="6996be2d-1" vueSlots="{{['default']}}" wx:else>
+            <uni-forms-item bind:__l="__l" class="data-v-61cf25bc" label="{{item.label}}" name="{{item.name}}" vueId="{{'6996be2d-2-'+index+','+'6996be2d-1'}}" vueSlots="{{['default']}}" wx:for="{{formItems}}" wx:key="index">
+                <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-61cf25bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'formData',[ ['formItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.localdata}}" value="{{formData[item.name]}}" vueId="{{'6996be2d-3-'+index+','+'6996be2d-2-'+index}}"></uni-data-checkbox>
+            </uni-forms-item>
+        </uni-forms>
+    </view>
+    <view class="form-submit-btn data-v-61cf25bc" wx:if="{{disabled}}">
+        <text class="disabled-btn data-v-61cf25bc">开始填写起诉状</text>
+    </view>
+    <view bindtap="__e" class="form-submit-btn data-v-61cf25bc" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}" wx:else>
+        <text class="data-v-61cf25bc">开始填写起诉状</text>
+    </view>
+</view>

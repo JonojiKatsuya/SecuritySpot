@@ -1,0 +1,128 @@
+wx-button.base.data-v-4c57e13c {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-4c57e13c:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-4c57e13c {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-4c57e13c:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-4c57e13c {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-4c57e13c {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.container.data-v-4c57e13c {
+    background-color: #fafbff;
+    padding-bottom: 300rpx;
+    position: relative
+}
+
+.container .title.data-v-4c57e13c {
+    -webkit-align-items: center;
+    align-items: center;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-size: 36rpx;
+    font-weight: 500;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0
+}
+
+.container .title wx-image.data-v-4c57e13c {
+    height: 86px;
+    width: 100%
+}
+
+.container .title .title-content.data-v-4c57e13c {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    position: absolute
+}
+
+.container .title .title-content wx-text.data-v-4c57e13c {
+    margin: 108rpx 0 26rpx
+}
+
+.container .content.data-v-4c57e13c {
+    padding: 0 24rpx
+}
+
+.container .content .content-title.data-v-4c57e13c {
+    color: #323233;
+    font-size: 28rpx;
+    font-weight: 500;
+    padding: 32rpx
+}
+
+.container .content wx-image.data-v-4c57e13c {
+    height: 4500rpx;
+    width: 100%
+}
+
+.container .btn-container.data-v-4c57e13c {
+    -webkit-align-items: center;
+    align-items: center;
+    background: #fff;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 32rpx;
+    gap: 26rpx;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 24rpx 24rpx 68rpx;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 10
+}
+
+.container .btn-container .save-btn.data-v-4c57e13c {
+    background: rgba(25,103,221,.06);
+    border-radius: 20rpx;
+    color: #1967dd;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center
+}
+
+.container .btn-container .form-submit-btn.data-v-4c57e13c {
+    background-color: #1967dd;
+    border-radius: 20rpx;
+    color: #fff;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center
+}

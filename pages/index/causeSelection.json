@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-forms": "pages\\index\\components\\uni-forms\\uni-forms",
+    "uni-forms-item": "pages\\index\\components\\uni-forms-item\\uni-forms-item",
+    "uni-data-checkbox": "pages\\index\\components\\uni-data-checkbox\\uni-data-checkbox"
+  }
+}

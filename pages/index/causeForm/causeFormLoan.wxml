@@ -1,0 +1,83 @@
+<view class="container data-v-2d81a0bc">
+    <view class="title data-v-2d81a0bc">
+        <image class="data-v-2d81a0bc" mode="aspectFill" src="/static/cause/banner_bg@2x.png"></image>
+        <view class="title-content data-v-2d81a0bc">
+            <text class="data-v-2d81a0bc">要素式起诉状</text>
+        </view>
+    </view>
+    <pleadings-tab-nav bind:__l="__l" bind:input="__e" bind:tabClick="__e" class="data-v-2d81a0bc" customClass="tab-nav" data-event-opts="{{[ [ '^tabClick',[ ['handleTabClick'] ] ],[ '^input',[ [ '__set_model',[ '','currentTab','$event',[] ] ] ] ] ]}}" tabs="{{tabList}}" value="{{currentTab}}" vueId="783394f1-1" vueSlots="{{['tab-0','tab-1','tab-2','tab-3']}}">
+        <view class="content data-v-2d81a0bc" slot="tab-0">
+            <view class="data-v-2d81a0bc" wx:for="{{partyFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-2d81a0bc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-2d81a0bc vue-ref-in-for" data-ref="form" model="{{partyFormData}}" vueId="{{'783394f1-2-'+sectionIndex+','+'783394f1-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-2d81a0bc',item.class]}}" label="{{item.label}}" name="{{item.name}}" vueId="{{'783394f1-3-'+sectionIndex+'-'+index+','+'783394f1-2-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{partyFormData[item.name]}}" vueId="{{'783394f1-4-'+sectionIndex+'-'+index+','+'783394f1-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" type="number" value="{{partyFormData[item.name]}}" vueId="{{'783394f1-5-'+sectionIndex+'-'+index+','+'783394f1-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='inputNumber'}}"></uni-easyinput>
+                        <picker-select bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" range="{{item.options}}" value="{{partyFormData[item.name]}}" vueId="{{'783394f1-6-'+sectionIndex+'-'+index+','+'783394f1-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='select'}}"></picker-select>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{partyFormData[item.name]}}" vueId="{{'783394f1-7-'+sectionIndex+'-'+index+','+'783394f1-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-2d81a0bc" slot="tab-1">
+            <view class="data-v-2d81a0bc" wx:for="{{claimsFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-2d81a0bc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-2d81a0bc vue-ref-in-for" data-ref="form" model="{{claimsFormData}}" vueId="{{'783394f1-8-'+sectionIndex+','+'783394f1-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-2d81a0bc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'783394f1-9-'+sectionIndex+'-'+index+','+'783394f1-8-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{claimsFormData[item.name]}}" vueId="{{'783394f1-10-'+sectionIndex+'-'+index+','+'783394f1-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{claimsFormData[item.name]}}" vueId="{{'783394f1-11-'+sectionIndex+'-'+index+','+'783394f1-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-2d81a0bc" slot="tab-2">
+            <view class="data-v-2d81a0bc" wx:for="{{jurisdictionFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-2d81a0bc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-2d81a0bc vue-ref-in-for" data-ref="form" model="{{jurisdictionFormData}}" vueId="{{'783394f1-12-'+sectionIndex+','+'783394f1-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-2d81a0bc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'783394f1-13-'+sectionIndex+'-'+index+','+'783394f1-12-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'783394f1-14-'+sectionIndex+'-'+index+','+'783394f1-13-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'783394f1-15-'+sectionIndex+'-'+index+','+'783394f1-13-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'783394f1-16-'+sectionIndex+'-'+index+','+'783394f1-13-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-2d81a0bc" slot="tab-3">
+            <view class="data-v-2d81a0bc" wx:for="{{factsFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-2d81a0bc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-2d81a0bc vue-ref-in-for" data-ref="form" model="{{factsFormData}}" vueId="{{'783394f1-17-'+sectionIndex+','+'783394f1-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-2d81a0bc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'783394f1-18-'+sectionIndex+'-'+index+','+'783394f1-17-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{factsFormData[item.name]}}" vueId="{{'783394f1-19-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{factsFormData[item.name]}}" vueId="{{'783394f1-20-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{factsFormData[item.name]}}" vueId="{{'783394f1-21-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                        <date-range-picker bind:__l="__l" bind:updateEndTime="__e" bind:updateStartTime="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^updateStartTime',[ ['e0'] ] ],[ '^updateEndTime',[ ['e1'] ] ] ]}}" data-event-params="{{({item:item,item:item})}}" endTime="{{factsFormData[item.name.endTime]}}" startTime="{{factsFormData[item.name.startTime]}}" vueId="{{'783394f1-22-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='dateRange'}}"></date-range-picker>
+                        <view class="load-rate-item-left data-v-2d81a0bc" wx:if="{{item.type==='loanRate'}}">
+                            <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input custom-suffix-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','loanRate','$event',[] ],['factsFormData'] ] ] ] ]}}" placeholder="借款利率" type="number" value="{{factsFormData.loanRate}}" vueId="{{'783394f1-23-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}"></uni-easyinput>
+                            <view class="uni-easyinput-suffix data-v-2d81a0bc">%</view>
+                        </view>
+                        <picker-select bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','interestType','$event',[] ],['factsFormData'] ] ] ] ]}}" placeholder="计息方式" range="{{interestTypeOptions}}" value="{{factsFormData.interestType}}" vueId="{{'783394f1-24-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='loanRate'}}"></picker-select>
+                        <picker-select bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" range="{{item.options}}" value="{{factsFormData[item.name]}}" vueId="{{'783394f1-25-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='select'}}"></picker-select>
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input custom-suffix-input data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" type="number" value="{{factsFormData[item.name]}}" vueId="{{'783394f1-26-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='inputUnit'}}"></uni-easyinput>
+                        <view class="uni-easyinput-suffix data-v-2d81a0bc" wx:if="{{item.type==='inputUnit'}}">元</view>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','overdueRepayment','$event',[] ],['factsFormData'] ] ] ] ]}}" localdata="{{overdueRepaymentOptions}}" value="{{factsFormData.overdueRepayment}}" vueId="{{'783394f1-27-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='overdueRepayment'}}"></uni-data-checkbox>
+                        <view class="overdue-repay-date data-v-2d81a0bc" wx:if="{{item.type==='overdueRepayment'}}">
+                            <picker-date bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','overdueDate','$event',[] ],['factsFormData'] ] ] ] ]}}" isShowArrow="{{false}}" placeholder="日期时间" value="{{factsFormData.overdueDate}}" vueId="{{'783394f1-28-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}"></picker-date>
+                            <text class="overdue-repay-text data-v-2d81a0bc">至今</text>
+                        </view>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','guarantee','$event',[] ],['factsFormData'] ] ] ] ]}}" localdata="{{guaranteeOptions}}" value="{{factsFormData.guarantee}}" vueId="{{'783394f1-29-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='guarantee'}}"></uni-data-checkbox>
+                        <view class="overdue-repay-date data-v-2d81a0bc" wx:if="{{item.type==='guarantee'}}">
+                            <picker-date bind:__l="__l" bind:input="__e" class="data-v-2d81a0bc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','guaranteeDate','$event',[] ],['factsFormData'] ] ] ] ]}}" isShowArrow="{{false}}" placeholder="日期时间" value="{{factsFormData.guaranteeDate}}" vueId="{{'783394f1-30-'+sectionIndex+'-'+index+','+'783394f1-18-'+sectionIndex+'-'+index}}"></picker-date>
+                        </view>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+    </pleadings-tab-nav>
+    <view class="btn-container data-v-2d81a0bc">
+        <view bindtap="__e" class="save-btn data-v-2d81a0bc" data-event-opts="{{[ [ 'tap',[ [ 'saveForm',[1] ] ] ] ]}}">暂存</view>
+        <view bindtap="__e" class="form-submit-btn data-v-2d81a0bc" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}">
+            <text class="data-v-2d81a0bc" wx:if="{{currentTab===3}}">生成起诉状</text>
+            <text class="data-v-2d81a0bc" wx:else>下一步</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,67 @@
+<view class="container data-v-0e828afc">
+    <view class="title data-v-0e828afc">
+        <image class="data-v-0e828afc" mode="aspectFill" src="/static/cause/banner_bg@2x.png"></image>
+        <view class="title-content data-v-0e828afc">
+            <text class="data-v-0e828afc">要素式起诉状</text>
+        </view>
+    </view>
+    <pleadings-tab-nav bind:__l="__l" bind:input="__e" bind:tabClick="__e" class="data-v-0e828afc" customClass="tab-nav" data-event-opts="{{[ [ '^tabClick',[ ['handleTabClick'] ] ],[ '^input',[ [ '__set_model',[ '','currentTab','$event',[] ] ] ] ] ]}}" tabs="{{tabList}}" value="{{currentTab}}" vueId="2ff91245-1" vueSlots="{{['tab-0','tab-1','tab-2','tab-3']}}">
+        <view class="content data-v-0e828afc" slot="tab-0">
+            <view class="data-v-0e828afc" wx:for="{{partyFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-0e828afc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-0e828afc vue-ref-in-for" data-ref="form" model="{{partyFormData}}" vueId="{{'2ff91245-2-'+sectionIndex+','+'2ff91245-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-0e828afc',item.class]}}" label="{{item.label}}" name="{{item.name}}" vueId="{{'2ff91245-3-'+sectionIndex+'-'+index+','+'2ff91245-2-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{partyFormData[item.name]}}" vueId="{{'2ff91245-4-'+sectionIndex+'-'+index+','+'2ff91245-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" type="number" value="{{partyFormData[item.name]}}" vueId="{{'2ff91245-5-'+sectionIndex+'-'+index+','+'2ff91245-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='inputNumber'}}"></uni-easyinput>
+                        <picker-select bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" range="{{item.options}}" value="{{partyFormData[item.name]}}" vueId="{{'2ff91245-6-'+sectionIndex+'-'+index+','+'2ff91245-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='select'}}"></picker-select>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'partyFormData',[ ['partyFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{partyFormData[item.name]}}" vueId="{{'2ff91245-7-'+sectionIndex+'-'+index+','+'2ff91245-3-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-0e828afc" slot="tab-1">
+            <view class="data-v-0e828afc" wx:for="{{claimsFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-0e828afc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-0e828afc vue-ref-in-for" data-ref="form" model="{{claimsFormData}}" vueId="{{'2ff91245-8-'+sectionIndex+','+'2ff91245-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-0e828afc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'2ff91245-9-'+sectionIndex+'-'+index+','+'2ff91245-8-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{claimsFormData[item.name]}}" vueId="{{'2ff91245-10-'+sectionIndex+'-'+index+','+'2ff91245-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{claimsFormData[item.name]}}" vueId="{{'2ff91245-11-'+sectionIndex+'-'+index+','+'2ff91245-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name.inputName'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder.inputPlaceholder}}" value="{{claimsFormData[item.name.inputName]}}" vueId="{{'2ff91245-12-'+sectionIndex+'-'+index+','+'2ff91245-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='inputAndSelect'}}"></uni-easyinput>
+                        <picker-select bind:__l="__l" bind:input="__e" class="custom-select data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'claimsFormData',[ ['claimsFormSection','',sectionIndex],['sectionFormItems','',index,'name.selectName'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder.selectPlaceholder}}" range="{{item.options}}" value="{{claimsFormData[item.name.selectName]}}" vueId="{{'2ff91245-13-'+sectionIndex+'-'+index+','+'2ff91245-9-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='inputAndSelect'}}"></picker-select>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-0e828afc" slot="tab-2">
+            <view class="data-v-0e828afc" wx:for="{{jurisdictionFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-0e828afc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-0e828afc vue-ref-in-for" data-ref="form" model="{{jurisdictionFormData}}" vueId="{{'2ff91245-14-'+sectionIndex+','+'2ff91245-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-0e828afc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'2ff91245-15-'+sectionIndex+'-'+index+','+'2ff91245-14-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'2ff91245-16-'+sectionIndex+'-'+index+','+'2ff91245-15-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'2ff91245-17-'+sectionIndex+'-'+index+','+'2ff91245-15-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'jurisdictionFormData',[ ['jurisdictionFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{jurisdictionFormData[item.name]}}" vueId="{{'2ff91245-18-'+sectionIndex+'-'+index+','+'2ff91245-15-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+        <view class="content data-v-0e828afc" slot="tab-3">
+            <view class="data-v-0e828afc" wx:for="{{factsFormSection}}" wx:for-index="sectionIndex" wx:for-item="sectionItem" wx:key="sectionIndex">
+                <view class="content-title data-v-0e828afc">{{sectionItem.sectionTitle}}</view>
+                <uni-forms bind:__l="__l" class="data-v-0e828afc vue-ref-in-for" data-ref="form" model="{{factsFormData}}" vueId="{{'2ff91245-19-'+sectionIndex+','+'2ff91245-1'}}" vueSlots="{{['default']}}">
+                    <uni-forms-item bind:__l="__l" class="{{['data-v-0e828afc',item.class]}}" label="{{item.label}}" labelPosition="{{item.labelPosition}}" name="{{item.name}}" vueId="{{'2ff91245-20-'+sectionIndex+'-'+index+','+'2ff91245-19-'+sectionIndex}}" vueSlots="{{['default']}}" wx:for="{{sectionItem.sectionFormItems}}" wx:key="index">
+                        <uni-easyinput bind:__l="__l" bind:input="__e" class="custom-input data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" placeholder="{{item.placeholder}}" value="{{factsFormData[item.name]}}" vueId="{{'2ff91245-21-'+sectionIndex+'-'+index+','+'2ff91245-20-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='input'}}"></uni-easyinput>
+                        <uni-data-checkbox bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" localdata="{{item.options}}" value="{{factsFormData[item.name]}}" vueId="{{'2ff91245-22-'+sectionIndex+'-'+index+','+'2ff91245-20-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='checkbox'}}"></uni-data-checkbox>
+                        <picker-date bind:__l="__l" bind:input="__e" class="data-v-0e828afc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','$1','$event',[] ],[ 'factsFormData',[ ['factsFormSection','',sectionIndex],['sectionFormItems','',index,'name'] ] ] ] ] ] ]}}" disableFuture="{{item.isDisableFuture}}" placeholder="{{item.placeholder}}" value="{{factsFormData[item.name]}}" vueId="{{'2ff91245-23-'+sectionIndex+'-'+index+','+'2ff91245-20-'+sectionIndex+'-'+index}}" wx:if="{{item.type==='date'}}"></picker-date>
+                    </uni-forms-item>
+                </uni-forms>
+            </view>
+        </view>
+    </pleadings-tab-nav>
+    <view class="btn-container data-v-0e828afc">
+        <view bindtap="__e" class="save-btn data-v-0e828afc" data-event-opts="{{[ [ 'tap',[ [ 'saveForm',[1] ] ] ] ]}}">暂存</view>
+        <view bindtap="__e" class="form-submit-btn data-v-0e828afc" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}">
+            <text class="data-v-0e828afc" wx:if="{{currentTab===3}}">生成起诉状</text>
+            <text class="data-v-0e828afc" wx:else>下一步</text>
+        </view>
+    </view>
+</view>
