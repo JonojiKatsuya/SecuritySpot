@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\list\\components\\title-bar\\title-bar",
+    "search-bar": "pages\\list\\components\\search-bar\\search-bar",
+    "category-tab": "pages\\list\\components\\category-tab\\category-tab",
+    "search-condition": "pages\\list\\components\\search-condition\\search-condition",
+    "case-tab": "pages\\list\\components\\case-tab\\case-tab",
+    "toolbar": "pages\\list\\components\\toolbar\\toolbar",
+    "uni-popup": "pages\\list\\components\\uni-popup\\uni-popup",
+    "popup-collect": "pages\\list\\components\\popup-collect\\popup-collect"
+  }
+}

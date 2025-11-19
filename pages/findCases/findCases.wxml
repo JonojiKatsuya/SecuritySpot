@@ -1,0 +1,19 @@
+<view class="index">
+    <title-bar bind:__l="__l" showBack="{{false}}" showHome="{{false}}" vueId="275153aa-1"></title-bar>
+    <view class="index-panel">
+        <view class="index-logo">
+            <image mode src="../../static/search/search_logo.png"></image>
+        </view>
+        <search-bar bind:__l="__l" bind:tap="__e" data-event-opts="{{[ [ '^tap',[ ['linkToSearch'] ] ] ]}}" searchable="{{true}}" vueId="275153aa-2"></search-bar>
+        <view class="index-nav">
+            <view class="index-nav-conts">
+                <view class="index-nav-arrays">
+                    <view bindtap="__e" class="array-item" data-event-opts="{{[ [ 'tap',[ [ 'linkTo',['$0'],[ [ ['recommendArr','',index] ] ] ] ] ] ]}}" wx:for="{{recommendArr}}" wx:key="index">
+                        <image mode class="array-icon" src="{{item.icon}}"></image>
+                        <view class="array-text">{{''+item.label+''}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

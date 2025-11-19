@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "民法典",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\mfd\\components\\title-bar\\title-bar",
+    "uni-drawer": "pages\\mfd\\components\\uni-drawer\\uni-drawer",
+    "catalog-tree": "pages\\mfd\\components\\catalog-tree\\catalog-tree",
+    "category-tab": "pages\\mfd\\components\\category-tab\\category-tab",
+    "uni-popup": "pages\\mfd\\components\\uni-popup\\uni-popup",
+    "popup-tips": "pages\\mfd\\components\\popup-tips\\popup-tips",
+    "drop-menu": "pages\\mfd\\components\\drop-menu\\drop-menu"
+  }
+}

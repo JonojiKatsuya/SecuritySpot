@@ -1,0 +1,91 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.index-panel {
+    margin: 180rpx 0 0;
+    padding: 140rpx 30rpx 0
+}
+
+.index-logo {
+    margin: 0 0 98rpx;
+    text-align: center
+}
+
+.index-logo wx-image {
+    height: 70rpx;
+    width: 380rpx
+}
+
+.index-static {
+    color: #666;
+    font-size: 24rpx;
+    margin: 0 0 60rpx;
+    text-align: center
+}
+
+.index-nav {
+    margin: 20rpx 0
+}
+
+.index-nav-conts {
+    min-height: 380rpx;
+    padding: 16rpx 0
+}
+
+.index-nav-arrays {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.array-item {
+    margin: 14rpx 0;
+    text-align: center;
+    width: 25%
+}
+
+.array-icon {
+    border-radius: 50%;
+    height: 110rpx;
+    margin: 0 0 6rpx;
+    width: 110rpx
+}
+
+.array-text {
+    color: #666;
+    font-size: 28rpx
+}

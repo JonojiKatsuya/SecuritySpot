@@ -1,0 +1,73 @@
+<scroll-view bindscroll="__e" class="list" data-event-opts="{{[ [ 'scroll',[ [ 'pageScrollGo',['$event'] ] ] ] ]}}" scrollIntoView="{{toView}}" scrollY="true">
+    <title-bar bind:__l="__l" id="title-bar" vueId="2e637200-1"></title-bar>
+    <view class="search-panel">
+        <search-bar bind:__l="__l" bind:returnSaveHistory="__e" class="vue-ref" data-event-opts="{{[ [ '^returnSaveHistory',[ ['returnSaveHistory'] ] ] ]}}" data-ref="searchBar" vueId="2e637200-2"></search-bar>
+        <category-tab activeTab="{{activeTab}}" bind:__l="__l" bind:returnCategoryTabValue="__e" data-event-opts="{{[ [ '^returnCategoryTabValue',[ ['returnCategoryTabValue'] ] ] ]}}" tabList="{{tabList}}" vueId="2e637200-3"></category-tab>
+    </view>
+    <view class="condition">
+        <search-condition bind:__l="__l" bind:returnClear="__e" bind:returnSaveCondition="__e" class="vue-ref" conditionData="{{conditionData}}" data-event-opts="{{[ [ '^returnClear',[ ['returnClear'] ] ],[ '^returnSaveCondition',[ ['returnSaveCondition'] ] ] ]}}" data-ref="searchCondition" vueId="2e637200-4"></search-condition>
+    </view>
+    <view class="nav">
+        <view class="nav-tab">
+            <view bindtap="__e" class="{{['nav-tab-item',activeNav==item.value?'nav-tab-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'toggleNav',['$0'],[ [ ['navData','',index] ] ] ] ] ] ]}}" wx:for="{{navData}}" wx:key="index">
+                <text>{{item.label}}</text>
+                <text wx:if="{{activeNav==item.value}}">{{total}}</text>
+            </view>
+        </view>
+    </view>
+    <scroll-view class="picker-panel" scrollX="true">
+        <view class="picker-item">
+            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'handlePickerDocType',['$event'] ] ] ] ]}}" mode="selector" range="{{docTypeData}}" rangeKey="itemname" value="{{docTypeIndex}}">
+                <view>{{docType}}</view>
+            </picker>
+        </view>
+        <view class="picker-item">
+            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'handlePicker',['$event'] ] ] ] ]}}" mode="selector" range="{{pickerData}}" rangeKey="itemname" value="{{pickerIndex}}">
+                <view>{{pickerName}}</view>
+            </picker>
+        </view>
+        <view class="picker-item">
+            <view bindtap="__e" class="picker-mask" data-event-opts="{{[ [ 'tap',[ [ 'handleTapPicker',['$event'] ] ] ] ]}}" wx:if="{{!hideMask}}"></view>
+            <picker bindchange="__e" bindcolumnchange="__e" data-event-opts="{{[ [ 'change',[ [ 'handleMultiPicker',['$event'] ] ] ],[ 'columnchange',[ [ 'handleColPicker',['$event'] ] ] ] ]}}" mode="multiSelector" range="{{multiPickerData}}" rangeKey="itemname" value="{{multiPickerIndex}}">
+                <view>{{multiPickerName}}</view>
+            </picker>
+        </view>
+    </scroll-view>
+    <view class="list-box">
+        <view class="list-item" wx:for="{{$root.l1}}" wx:key="index">
+            <view class="list-item-baseInfo">
+                <view bindtap="__e" class="list-item-title" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetails',['$0'],[ [ ['listData','',index] ] ] ] ] ] ]}}">
+                    <view class="title-index">{{''+index+1+''}}</view>
+                    <rich-text nodes="{{item[$orig].Title}}"></rich-text>
+                </view>
+                <view class="list-item-discribe">
+                    <rich-text nodes="{{item[$orig].CaseFlag?'【案号】'+item[$orig].CaseFlag:''}}"></rich-text>
+                </view>
+                <view class="list-item-discribe">
+                    <rich-text nodes="{{item[$orig].Court?'【审理法院】'+item[$orig].Court:''}}"></rich-text>
+                    <rich-text nodes="{{item[$orig].LastInstanceDate?'【审结日期】'+item[$orig].LastInstanceDate:''}}"></rich-text>
+                </view>
+                <view class="list-item-hit" wx:if="{{item.g0}}">命中词频：<view class="hit-content" wx:for="{{item.l0}}" wx:for-index="cindex" wx:for-item="citem" wx:key="cindex">
+                        <rich-text nodes="{{citem[$orig].keyWordCont+'（'+citem[$orig].keyWordCount+'）'+(cindex+1==citem.g1?'':'， ')}}"></rich-text>
+                    </view>
+                </view>
+            </view>
+            <view class="list-item-result" wx:if="{{item[$orig].showCaseTab}}">
+                <case-tab bind:__l="__l" info="{{item[$orig]}}" vueId="{{'2e637200-5-'+index}}"></case-tab>
+            </view>
+        </view>
+        <view class="tips-noresult" wx:if="{{isShowTips}}">
+            <text>{{'抱歉，没有找到“ '+searchKeyword+' ”相关结果'}}</text>
+            <text>1）请您检查输入是否错误</text>
+            <text>2）请您尝试简化输入词</text>
+            <text>3）请您尝试用相似词或常用词</text>
+            <text>4）多个关键词之间用空格隔开</text>
+            <text>5）请减少查询字词的数量</text>
+        </view>
+        <view class="tips-nomore" wx:if="{{isShowNoMore}}">没有更多了</view>
+    </view>
+    <toolbar bind:__l="__l" bind:returnBackToTop="__e" data-event-opts="{{[ [ '^returnBackToTop',[ ['returnBackToTop'] ] ] ]}}" pages="list" showBackTop="{{showBackTop}}" vueId="2e637200-6"></toolbar>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popup" type="bottom" vueId="2e637200-7" vueSlots="{{['default']}}">
+        <popup-collect bind:__l="__l" bind:returnAddSucc="__e" class="vue-ref" collectGid="{{collectGid}}" data-event-opts="{{[ [ '^returnAddSucc',[ ['returnAddSucc'] ] ] ]}}" data-ref="popupCollect" vueId="{{'2e637200-8'+','+'2e637200-7'}}"></popup-collect>
+    </uni-popup>
+</scroll-view>

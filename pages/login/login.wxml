@@ -1,0 +1,29 @@
+<view class="login">
+    <title-bar bind:__l="__l" vueId="35a7246c-1"></title-bar>
+    <view class="login-panel">
+        <view class="logo">
+            <image mode src="../../static/login/logo.png"></image>
+        </view>
+        <view class="form">
+            <form>
+                <view class="form-item form-input-box">
+                    <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ 'handlePhone',['$event'] ] ] ] ]}}" placeholder="请输入手机号" type="text" value="{{phone}}"></input>
+                </view>
+                <view class="form-item">
+                    <view class="form-input-box">
+                        <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ 'handleVerCode',['$event'] ] ] ] ]}}" placeholder="请输入验证码" type="text" value="{{verCode}}"></input>
+                    </view>
+                    <view class="form-button-right">
+                        <view bindtap="__e" class="{{['btn-getCode',isSendCode?'btn-getCode-off':'btn-getCode-on']}}" data-event-opts="{{[ [ 'tap',[ [ 'getVerCode',['$event'] ] ] ] ]}}" size="mini">{{btnLabel}}</view>
+                    </view>
+                </view>
+                <view class="form-item">
+                    <text>如未注册北大法宝，则自动注册北大法宝账号</text>
+                </view>
+                <view class="form-item">
+                    <button bindtap="__e" class="btn-submit" data-event-opts="{{[ [ 'tap',[ [ 'bindPhone',['$event'] ] ] ] ]}}">绑定手机号</button>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

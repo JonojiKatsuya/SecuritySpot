@@ -1,0 +1,115 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.login {
+    background-color: #fff
+}
+
+.login-panel {
+    margin: 180rpx 0 0;
+    padding: 200rpx 132rpx 0
+}
+
+.logo {
+    margin: 0 0 120rpx
+}
+
+.logo wx-image {
+    height: 86rpx;
+    width: 100%
+}
+
+.form-item {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 0 0 45rpx
+}
+
+.form-input-box {
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+    font-size: 28rpx;
+    padding: 0 32rpx
+}
+
+.form-input-box wx-input {
+    font-size: 28rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    width: 100%
+}
+
+.form-item wx-text {
+    color: #c4c4c4;
+    font-size: 24rpx
+}
+
+.form-button-right {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 0 1 340rpx;
+    flex: 0 1 340rpx;
+    margin: 0 0 0 20rpx
+}
+
+.login .btn-getCode {
+    border-radius: 30px;
+    font-size: 24rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 8rpx;
+    text-align: center;
+    width: 100%
+}
+
+.btn-getCode-on {
+    background-color: #9b0000;
+    color: #fff
+}
+
+.btn-getCode-off {
+    background-color: #eee;
+    color: #c4c4c4
+}
+
+.login .btn-submit {
+    background-color: #9b0000;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 28rpx;
+    margin: 35rpx 0 0;
+    width: 100%
+}

@@ -1,0 +1,34 @@
+<view class="mfd">
+    <title-bar bind:__l="__l" vueId="77cf3630-1"></title-bar>
+    <view class="search">
+        <view bindtap="__e" class="search-dropmenu" data-event-opts="{{[ [ 'tap',[ [ 'showMfdTree',['$event'] ] ] ] ]}}">
+            <image mode class="icon-catalog" src="../../static/mfd/icon_mfd.png"></image>
+        </view>
+        <view class="search-bar">
+            <view class="icon-search"></view>
+            <input bindconfirm="__e" bindinput="__e" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'getMfdData',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','keywords','$event',[] ] ] ] ] ]}}" placeholder="请输入关键词或条号" type="text" value="{{keywords}}"></input>
+        </view>
+        <view bindtap="__e" class="search-screen" data-event-opts="{{[ [ 'tap',[ [ 'getMfdData',['$event'] ] ] ] ]}}">搜索</view>
+    </view>
+    <uni-drawer bind:__l="__l" bind:change="__e" class="vue-ref" data-event-opts="{{[ [ '^change',[ ['handleChangeDrawer'] ] ] ]}}" data-ref="drawer" visible="{{true}}" vueId="77cf3630-2" vueSlots="{{['default']}}" width="300">
+        <view style="padding:30rpx;">
+            <catalog-tree bind:__l="__l" bind:returnCatalogItem="__e" catalogList="{{catalogList}}" data-event-opts="{{[ [ '^returnCatalogItem',[ ['returnCatalogItem'] ] ] ]}}" vueId="{{'77cf3630-3'+','+'77cf3630-2'}}"></catalog-tree>
+        </view>
+    </uni-drawer>
+    <view class="mfd-tab">
+        <category-tab activeTab="{{activeTab}}" bind:__l="__l" bind:returnCategoryTabValue="__e" data-event-opts="{{[ [ '^returnCategoryTabValue',[ ['returnCategoryTabValue'] ] ] ]}}" tabList="{{tabList}}" vueId="77cf3630-4"></category-tab>
+    </view>
+    <view class="mfd-list">
+        <view class="list-item" wx:for="{{listData}}" wx:key="index">
+            <view class="list-item-title">{{''+item.tiaoTitle+''}}</view>
+            <view class="list-item-content">{{''+item.tiaoContent+''}}</view>
+            <view class="list-item-label">
+                <view bindtap="__e" class="label-item" data-event-opts="{{[ [ 'tap',[ [ 'handleQuery',['$0'],[ [ ['listData','',index] ] ] ] ] ] ]}}">相关案例</view>
+            </view>
+            <view class="{{['list-item-category',item.lawChange==1?'category-add':item.lawChange==2?'category-fix':'']}}" wx:if="{{item.lawChange}}">{{''+(item.lawChange==1?'新增':item.lawChange==2?'修订':'')+''}}</view>
+        </view>
+    </view>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popupmfd" maskClick="{{false}}" type="center" vueId="77cf3630-5" vueSlots="{{['default']}}">
+        <popup-tips bind:__l="__l" bind:returnClose="__e" class="vue-ref" data-event-opts="{{[ [ '^returnClose',[ ['returnClose'] ] ] ]}}" data-ref="popuptips" vueId="{{'77cf3630-6'+','+'77cf3630-5'}}"></popup-tips>
+    </uni-popup>
+</view>

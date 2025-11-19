@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\details\\components\\title-bar\\title-bar",
+    "keyword-panel": "pages\\details\\components\\keyword-panel\\keyword-panel",
+    "uni-popup": "pages\\details\\components\\uni-popup\\uni-popup",
+    "uni-list": "pages\\details\\components\\uni-list\\uni-list",
+    "uni-list-item": "pages\\details\\components\\uni-list-item\\uni-list-item",
+    "bottom-nav": "pages\\details\\components\\bottom-nav\\bottom-nav",
+    "toolbar": "pages\\details\\components\\toolbar\\toolbar",
+    "text-panel": "pages\\details\\components\\text-panel\\text-panel",
+    "uni-drawer": "pages\\details\\components\\uni-drawer\\uni-drawer",
+    "popup-collect": "pages\\details\\components\\popup-collect\\popup-collect",
+    "popup-share": "pages\\details\\components\\popup-share\\popup-share"
+  }
+}

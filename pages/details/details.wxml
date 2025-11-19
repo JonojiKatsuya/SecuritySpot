@@ -1,0 +1,148 @@
+<view class="{{['vue-ref',true?'detail':'',value==0?'font_size1':'',value==50?'font_size2':'',value==100?'font_size3':'']}}" data-ref="detail" style="{{'height:'+'calc(100vh - '+marginTop+'rpx)'+';'}}">
+    <title-bar bind:__l="__l" vueId="ffa9e60c-1"></title-bar>
+    <view class="fix-panel">
+        <view class="title">
+            <text>{{''+(resultData.Title?resultData.Title:'')+''}}</text>
+        </view>
+    </view>
+    <keyword-panel bind:__l="__l" bind:returnHandleCancel="__e" bind:returnHandleSearch="__e" data-event-opts="{{[ [ '^returnHandleSearch',[ ['returnHandleSearch'] ] ],[ '^returnHandleCancel',[ ['returnHandleCancel'] ] ] ]}}" hei="{{marginTop}}" vueId="ffa9e60c-2" wx:if="{{showKeywordPanel}}"></keyword-panel>
+    <scroll-view bindscroll="__e" class="detail_scroll" data-event-opts="{{[ [ 'scroll',[ [ 'pageScrollGo',['$event'] ] ] ] ]}}" scrollIntoView="{{toView}}" scrollWithAnimation="{{true}}" scrollY="{{true}}" style="{{'margin-top:'+132+marginTop+'rpx'+';'}}" wx:if="{{show}}">
+        <view bindtouchend="__e" bindtouchstart="__e" class="wrapper" data-event-opts="{{[ [ 'touchstart',[ [ 'handleTouchStart',['$event'] ] ] ],[ 'touchend',[ [ 'handleTouchEnd',['$event'] ] ] ] ]}}">
+            <view class="field">
+                <view class="field_lable" id="base01__info__">基本信息</view>
+                <view wx:for="{{$root.l2}}" wx:key="index">
+                    <view wx:if="{{item[$orig].type=='arr_arrObj'}}">
+                        <view class="field_info">
+                            <text wx:for="{{item.l1}}" wx:for-item="ele" wx:key="index">{{''+item[$orig].name+''}}<text wx:for="{{ele.l0}}" wx:for-item="twoLIst" wx:key="index">
+                                    <text style="padding-right:6px;" wx:if="{{index!=0&&item[$orig].children}}">{{fu}}</text>
+                                    <rich-text class="{{[item[$orig].link?'link':'']}}" nodes="{{twoLIst.m0}}" style="padding-right:6px;"></rich-text>
+                                </text>
+                            </text>
+                        </view>
+                    </view>
+                    <block wx:else>
+                        <view wx:if="{{item.g0}}">
+                            <view class="field_info">
+                                <rich-text nodes="{{item.m1}}"></rich-text>
+                            </view>
+                        </view>
+                        <block wx:else>
+                            <view wx:if="{{item[$orig].type=='obj'}}">
+                                <view class="field_info">
+                                    <rich-text nodes="{{item.m2}}"></rich-text>
+                                </view>
+                            </view>
+                            <block wx:else>
+                                <view wx:if="{{item[$orig].type=='arr'}}">
+                                    <view class="field_info">
+                                        <rich-text class="{{[item[$orig].link?'link':'']}}" nodes="{{item.m3}}"></rich-text>
+                                    </view>
+                                </view>
+                                <block wx:else>
+                                    <view wx:if="{{item[$orig].type=='string'||item[$orig].type=='htmlString'}}">
+                                        <view class="field_info">
+                                            <rich-text class="link" nodes="{{item.m4}}" wx:if="{{item[$orig].link}}"></rich-text>
+                                        </view>
+                                    </view>
+                                </block>
+                            </block>
+                        </block>
+                    </block>
+                </view>
+            </view>
+            <view class="noMembers" id="ddd" wx:if="{{!isMembers}}">
+                <button bindtap="__e" class="base" data-event-opts="{{[ [ 'tap',[ [ 'handleOpenMembers',['$event'] ] ] ] ]}}" type="default">开通会员</button>
+            </view>
+            <view class="structured_info" wx:else>
+                <view class="art_model art_fulltext" wx:if="{{resultData.FullText}}">
+                    <rich-text nodes="{{$root.m5}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.AjysName&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base02__info__">案件要素</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m6}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.PartyAll&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base03__info__">当事人信息</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m7}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.TrialAfter&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base04__info__">审理经过</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m8}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.Ascertain&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base05__info__">基本案情</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m9}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.Identified&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base06__info__">本院认为</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m10}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{$root.g1}}">
+                    <view class="structured_info_title" id="base07__info__">法律适用</view>
+                    <view class="structured_info_content">
+                        <view wx:for="{{$root.l3}}" wx:key="index">
+                            <rich-text nodes="{{item.m11}}"></rich-text>
+                        </view>
+                    </view>
+                </view>
+                <view class="art_model" wx:if="{{resultData.RefereeResult&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base08__info__">判决结果</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m12}}"></rich-text>
+                </view>
+                <view class="art_model" wx:if="{{resultData.Judge&&!resultData.FullText}}">
+                    <view wx:if="{{$root.m13}}">
+                        <view class="structured_info_title" id="base09__info__">审判人员</view>
+                        <rich-text class="structured_info_content" nodes="{{$root.m14}}"></rich-text>
+                    </view>
+                    <view wx:if="{{$root.m15}}">
+                        <view class="structured_info_title" id="base09__info__">审判人员</view>
+                        <rich-text class="structured_info_content" nodes="{{$root.m16}}"></rich-text>
+                    </view>
+                </view>
+                <view class="art_model" wx:if="{{resultData.LastInstanceDate&&!resultData.FullText}}">
+                    <view class="structured_info_title" id="base10__info__">审结日期</view>
+                    <rich-text class="structured_info_content" nodes="{{$root.m17}}"></rich-text>
+                </view>
+            </view>
+            <uni-popup bind:__l="__l" class="vue-ref" data-ref="popup" type="bottom" vueId="ffa9e60c-3" vueSlots="{{['default']}}">
+                <view class="collection_header">
+                    <text class="collection_title">选择收藏夹</text>
+                </view>
+                <uni-list bind:__l="__l" class="coll_wrapper" vueId="{{'ffa9e60c-4'+','+'ffa9e60c-3'}}" vueSlots="{{['default']}}">
+                    <uni-list-item bind:__l="__l" bind:tap="__e" data-event-opts="{{[ [ '^tap',[ [ 'handleCreateColl',['$0'],[ [ ['files','',index,'collectFolderId'] ] ] ] ] ] ]}}" extraIcon="{{extraIcon1}}" showExtraIcon="{{true}}" tapable="true" title="{{item.folderName}}" vueId="{{'ffa9e60c-5-'+index+','+'ffa9e60c-4'}}" wx:for="{{files}}" wx:key="index"></uni-list-item>
+                </uni-list>
+            </uni-popup>
+            <uni-popup bind:__l="__l" class="vue-ref" data-ref="members" type="center" vueId="ffa9e60c-6" vueSlots="{{['default']}}">
+                <view class="members_wrapper">
+                    <view class="members_header">
+                        <text class="members_title">提示</text>
+                    </view>
+                    <view class="members_body">
+                        <text>由于相关规范,IOS功能暂不可用,请您到pc端购买开通</text>
+                    </view>
+                    <view class="members_footer">
+                        <button bindtap="__e" class="default" data-event-opts="{{[ [ 'tap',[ [ 'handleJump',['$event'] ] ] ] ]}}" type="default">联系客服</button>
+                        <button bindtap="__e" class="default" data-event-opts="{{[ [ 'tap',[ [ 'handleClose',['$event'] ] ] ] ]}}" type="default">确定</button>
+                    </view>
+                </view>
+            </uni-popup>
+        </view>
+    </scroll-view>
+    <bottom-nav bind:__l="__l" bind:returnOpenCatalog="__e" bind:returnOpenSearch="__e" bind:returnOpenShare="__e" data-event-opts="{{[ [ '^returnOpenCatalog',[ ['returnOpenCatalog'] ] ],[ '^returnOpenSearch',[ ['returnOpenSearch'] ] ],[ '^returnOpenShare',[ ['returnOpenShare'] ] ] ]}}" vueId="ffa9e60c-7"></bottom-nav>
+    <toolbar bind:__l="__l" bind:returnBackToTop="__e" bind:returnCollectPanel="__e" bind:returnCopyLink="__e" bind:returnTextPanel="__e" data-event-opts="{{[ [ '^returnTextPanel',[ ['returnTextPanel'] ] ],[ '^returnCopyLink',[ ['returnCopyLink'] ] ],[ '^returnCollectPanel',[ ['returnCollectPanel'] ] ],[ '^returnBackToTop',[ ['returnBackToTop'] ] ] ]}}" isCollected="{{isCollected}}" showBackTop="{{showBackTop}}" vueId="ffa9e60c-8" wx:if="{{showToolbar}}"></toolbar>
+    <text-panel bind:__l="__l" bind:returnSlideValue="__e" data-event-opts="{{[ [ '^returnSlideValue',[ ['returnSlideValue'] ] ] ]}}" value="{{value}}" vueId="ffa9e60c-9" wx:if="{{showTextPanel}}"></text-panel>
+    <uni-drawer bind:__l="__l" class="vue-ref" data-ref="drawer" visible="{{true}}" vueId="ffa9e60c-10" vueSlots="{{['default']}}">
+        <view class="cata_wrapper">
+            <view class="cata_title">目录</view>
+            <view class="cata_list">
+                <view bindtap="__e" class="uni-title" data-event-opts="{{[ [ 'tap',[ [ 'scrollGo',['$0'],[ [ ['catalogueList','',index] ] ] ] ] ] ]}}" wx:for="{{catalogueList}}" wx:key="index">{{''+item.title+''}}</view>
+            </view>
+        </view>
+    </uni-drawer>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popup" type="bottom" vueId="ffa9e60c-11" vueSlots="{{['default']}}">
+        <popup-collect bind:__l="__l" bind:returnAddSucc="__e" class="vue-ref" collectGid="{{gid}}" data-event-opts="{{[ [ '^returnAddSucc',[ ['returnAddSucc'] ] ] ]}}" data-ref="popupCollect" detailParams="{{detailParams}}" vueId="{{'ffa9e60c-12'+','+'ffa9e60c-11'}}"></popup-collect>
+    </uni-popup>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popup1" type="bottom" vueId="ffa9e60c-13" vueSlots="{{['default']}}">
+        <popup-share bind:__l="__l" bind:returnCancel="__e" class="vue-ref" data-event-opts="{{[ [ '^returnCancel',[ ['returnCancel'] ] ] ]}}" data-ref="popupShare" detailsTitle="{{resultData.Title}}" gid="{{gid}}" vueId="{{'ffa9e60c-14'+','+'ffa9e60c-13'}}"></popup-share>
+    </uni-popup>
+</view>
