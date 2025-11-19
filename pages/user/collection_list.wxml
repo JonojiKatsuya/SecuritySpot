@@ -1,0 +1,23 @@
+<view class="collction_list">
+    <title-bar bind:__l="__l" vueId="2ff3449c-1"></title-bar>
+    <view class="collction_wrapper">
+        <view class="list-item" wx:for="{{$root.l0}}" wx:key="index">
+            <view class="list-item-baseInfo">
+                <view bindtap="__e" class="list-item-title" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetails',['$0'],[ [ ['dataList','',index] ] ] ] ] ] ]}}">
+                    <view class="title-index">{{''+index+1+''}}</view>
+                    <rich-text nodes="{{item[$orig].title}}"></rich-text>
+                </view>
+                <view class="list-item-discribe">
+                    <rich-text nodes="{{item[$orig].CaseFlag}}"></rich-text>
+                </view>
+                <view class="list-item-discribe">
+                    <rich-text nodes="{{item.g0?'【'+item[$orig].lastInstanceCourt[item.g1-1]+'】':''}}"></rich-text>
+                    <rich-text nodes="{{item[$orig].lastInstanceDate?'【'+item[$orig].lastInstanceDate+'】':''}}"></rich-text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="load_more">
+        <uni-load-more bind:__l="__l" bind:clickLoadMore="__e" contentText="{{contentText}}" data-event-opts="{{[ [ '^clickLoadMore',[ ['clickLoadMore'] ] ] ]}}" status="{{status}}" vueId="2ff3449c-2"></uni-load-more>
+    </view>
+</view>

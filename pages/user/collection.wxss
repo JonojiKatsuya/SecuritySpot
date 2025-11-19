@@ -1,0 +1,197 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.collction .popup_wrapper .popup_title {
+    background-color: silver;
+    padding: 15rpx 30rpx
+}
+
+.collction .popup_wrapper .popup_page {
+    background-color: #fff;
+    padding: 15rpx 30rpx
+}
+
+.collction .popup_wrapper .popup_body .uni-input {
+    border: 1px solid #999;
+    border-radius: 2px;
+    font-size: 24rpx;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0 15rpx
+}
+
+.collction .popup_wrapper .popup_body .popup-submit {
+    background-color: #9b0000;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 28rpx;
+    height: 66rpx;
+    line-height: 66rpx
+}
+
+.collction .search_box {
+    -webkit-align-items: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 180rpx 0 0;
+    padding: 15px 30rpx
+}
+
+.collction .search_box .title {
+    line-height: 1em;
+    width: auto
+}
+
+.collction .search_box .select-all {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex
+}
+
+.collction .uni-input_box {
+    background-color: #eee;
+    border-radius: 20rpx;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 20rpx;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 0 20rpx;
+    padding: 4px 20rpx
+}
+
+.collction .uni-input_box .uni-input {
+    color: #666;
+    font-size: 24rpx;
+    line-height: 40rpx
+}
+
+.collction .uni-input_box .search_icon {
+    height: 20px;
+    width: 20px
+}
+
+.collction .load_more {
+    -webkit-align-items: center;
+    align-items: center;
+    border-top: 1px solid #999;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.collction .load_more wx-image {
+    height: 30px;
+    width: 30px
+}
+
+.collection-list-item {
+    -webkit-align-items: center;
+    align-items: center;
+    border-top: 1px solid #dfdfdf;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 28rpx;
+    padding: 20rpx 30rpx
+}
+
+.list-item-select {
+    border: 1px solid #666;
+    border-radius: 50%;
+    height: 26rpx;
+    width: 26rpx
+}
+
+.list-item-select-active {
+    background-color: #9b0000;
+    border: 1px solid #9b0000
+}
+
+.list-item-icon {
+    height: 83rpx;
+    margin: 0 20rpx;
+    width: 83rpx
+}
+
+.list-item-content {
+    font-size: 26rpx
+}
+
+.collection-handle {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    height: 240rpx;
+    -webkit-justify-content: center;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    width: 100%
+}
+
+.collection-handle wx-view {
+    border-radius: 30rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    width: 260rpx
+}
+
+.collection-handle .collection-rename {
+    border: 1px solid #9b0000;
+    color: #333;
+    margin: 0 50rpx 0 0
+}
+
+.collection-handle .collection-remove {
+    background-color: #9b0000;
+    border: 1px solid #9b0000;
+    color: #fff;
+    margin: 0
+}
+
+.collection-handle .collection-disabled {
+    border: 1px solid #dfdfdf;
+    color: #a6a6a6
+}

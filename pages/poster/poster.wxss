@@ -1,0 +1,236 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.post-wrapper {
+    height: 100vh;
+    overflow: hidden
+}
+
+.poster {
+    background: #fff;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: calc(100% - 10rpx - 180rpx);
+    left: 0;
+    padding: 0 40rpx 10rpx;
+    position: absolute;
+    top: 180rpx;
+    width: calc(100% - 80rpx);
+    z-index: 9
+}
+
+.poster,.poster-panel {
+    display: -webkit-flex;
+    display: flex
+}
+
+.poster-panel {
+    border-radius: 6rpx;
+    box-shadow: 0 0 5px #d3e2e2;
+    -webkit-flex: 2;
+    flex: 2;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 0 0 16rpx;
+    overflow: hidden
+}
+
+.poster-panel .poster-bg {
+    -webkit-flex: 1;
+    flex: 1
+}
+
+.poster-panel .poster-bg wx-image {
+    height: 100%;
+    width: 100%
+}
+
+.poster-panel .poster-msg {
+    -webkit-flex: 0 1 80rpx;
+    flex: 0 1 80rpx;
+    position: relative
+}
+
+.poster-panel .poster-msg .poster-msg-avatarUrl {
+    height: 100rpx;
+    left: 50%;
+    margin: 0 0 0 -50rpx;
+    position: absolute;
+    top: -50rpx;
+    width: 100rpx
+}
+
+.poster-panel .poster-msg .poster-msg-avatarUrl wx-image {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%
+}
+
+.poster-panel .poster-msg .poster-msg-nickname {
+    color: #666;
+    font-size: 28rpx;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    width: 100%
+}
+
+.poster-panel .poster-msg .poster-msg-cont {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    margin: 60rpx 0 30rpx;
+    padding: 0 34rpx
+}
+
+.poster-panel .poster-msg .poster-msg-cont .poster-msg-title {
+    color: #333;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 30rpx;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.poster-panel .poster-msg .poster-msg-cont .poster-msg-code {
+    border-radius: 50%;
+    -webkit-flex: 0 1 120rpx;
+    flex: 0 1 120rpx;
+    height: 120rpx;
+    margin: 0 0 0 40rpx
+}
+
+.poster-panel .poster-msg .poster-msg-cont .poster-msg-code wx-image {
+    height: 100%;
+    width: 100%
+}
+
+.poster-panel .poster-msg .poster-msg-tips {
+    color: #9b0000;
+    font-size: 28rpx;
+    text-align: center
+}
+
+.poster-handle {
+    -webkit-flex: 1;
+    flex: 1;
+    white-space: nowrap
+}
+
+.poster-handle .poster-handle-list {
+    margin: 20rpx 0
+}
+
+.poster-handle .poster-handle-list .poster-handle-item {
+    background-color: #9b0000;
+    display: inline-block;
+    height: 150rpx;
+    margin: 0 10rpx 0 0;
+    width: 100rpx
+}
+
+.poster-handle .poster-handle-render {
+    background: #9b0000;
+    border: 1px solid #9b0000;
+    border-radius: 10rpx;
+    color: #fff;
+    font-size: 32rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+    margin: 0 auto;
+    text-align: center;
+    width: 280rpx
+}
+
+.poster-canvas {
+    height: 100%;
+    left: 10000rpx;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.poster-canvas wx-canvas {
+    height: 100%;
+    opacity: 0;
+    width: 100%
+}
+
+.popup-auth {
+    background-color: #fff;
+    border-radius: 14rpx;
+    padding: 20rpx 30rpx;
+    width: 450rpx
+}
+
+.popup-auth-content {
+    color: #666;
+    margin: 30rpx 0;
+    text-align: center
+}
+
+.popup-auth-handle {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.popup-auth-handle .popup-auth-cancel {
+    color: #999
+}
+
+.popup-auth-handle .popup-auth-cancel,.popup-auth-handle .popup-auth-save {
+    border-radius: 30rpx;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 28rpx;
+    text-align: center
+}
+
+.popup-auth-handle .popup-auth-save {
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0
+}
+
+.popup-auth-handle .popup-auth-save:after {
+    border: none
+}

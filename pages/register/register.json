@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\register\\components\\title-bar\\title-bar",
+    "uni-forms": "pages\\register\\components\\uni-forms\\uni-forms",
+    "uni-forms-item": "pages\\register\\components\\uni-forms-item\\uni-forms-item"
+  }
+}

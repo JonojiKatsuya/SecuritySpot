@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\poster\\components\\title-bar\\title-bar",
+    "uni-popup": "pages\\poster\\components\\uni-popup\\uni-popup"
+  }
+}

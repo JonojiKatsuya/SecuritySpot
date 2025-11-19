@@ -1,0 +1,65 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.about {
+    padding: 61rpx 20rpx
+}
+
+.about .row {
+    color: #333;
+    font-size: 27rpx;
+    line-height: 46rpx;
+    margin: 20rpx 0;
+    text-indent: 2em
+}
+
+.about .img_box {
+    margin: 180rpx 0 0;
+    text-align: center
+}
+
+.about wx-image {
+    height: 70rpx;
+    width: 380rpx
+}
+
+.about .fabao {
+    height: 120rpx;
+    width: 134rpx
+}
+
+.about .about_info_footer {
+    color: #333;
+    font-size: 24rpx;
+    line-height: 40rpx;
+    text-align: center
+}

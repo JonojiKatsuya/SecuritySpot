@@ -1,0 +1,57 @@
+.tips {
+    margin: 465rpx 42rpx 0
+}
+
+.login-logo {
+    text-align: center
+}
+
+.login-logo wx-image {
+    height: 140rpx;
+    width: 140rpx
+}
+
+.login-title {
+    color: #333;
+    font-size: 36rpx;
+    font-weight: 700;
+    margin: 20rpx 0 266rpx;
+    text-align: center
+}
+
+.login-btn {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.login-submit {
+    background-color: #9b0000;
+    border-radius: 10rpx;
+    color: #fff;
+    margin: 0 0 0 40rpx
+}
+
+.login-cancel,.login-submit {
+    font-size: 36rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    padding: 0 60rpx
+}
+
+.login-cancel {
+    background-color: #fff;
+    border: 1px solid #9b0000;
+    border-radius: 10rpx;
+    color: #9b0000;
+    margin: 0
+}
+
+.login-tips {
+    color: #999;
+    font-size: $uni-size-xs;
+    padding: 0 50rpx 50rpx
+}

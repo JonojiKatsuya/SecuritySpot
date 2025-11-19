@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "title-bar": "pages\\search\\components\\title-bar\\title-bar",
+    "search-bar": "pages\\search\\components\\search-bar\\search-bar",
+    "category-tab": "pages\\search\\components\\category-tab\\category-tab"
+  }
+}

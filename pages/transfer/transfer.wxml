@@ -1,0 +1,14 @@
+<view class="transfer">
+    <title-bar bind:__l="__l" showBack="{{false}}" showHome="{{false}}" vueId="6ba8fee0-1"></title-bar>
+    <view class="tips">
+        <view class="login-logo">
+            <image mode src="../../static/login/login-logo.png"></image>
+        </view>
+        <view class="login-title">法宝类案</view>
+        <view class="login-tips">该程序需要获得您的用户信息</view>
+        <view class="login-btn">
+            <button bindtap="__e" class="login-cancel" data-event-opts="{{[ [ 'tap',[ [ 'handleCancel',['$event'] ] ] ] ]}}" lang="zh_CN">暂不登录</button>
+            <button bindtap="__e" class="login-submit" data-event-opts="{{[ [ 'tap',[ [ 'checkHasToken',['$event'] ] ] ] ]}}" lang="zh_CN">立即登录</button>
+        </view>
+    </view>
+</view>

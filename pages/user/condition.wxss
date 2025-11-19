@@ -1,0 +1,58 @@
+.user-condition {
+    border-top: 1px solid #999
+}
+
+.condition-list {
+    margin: 180rpx 0 0
+}
+
+.condition-list-item {
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 28rpx;
+    padding: 20rpx 30rpx
+}
+
+.condition-item-title {
+    color: #333
+}
+
+.condition-item-content {
+    color: #666;
+    margin: 12rpx 0
+}
+
+.condition-item-msg {
+    -webkit-flex: 1;
+    flex: 1
+}
+
+.condition-item-status {
+    text-align: center
+}
+
+.icon-del {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAFmUlEQVR4Xu2bXWwVRRTH/2d6W6iAtQ8+KShqBIsfaASBB15MSHwAIma7e2+tRhJiiKgv+OJn/RaNiYkasBIpgbK7dyHR9sHgiyRqQGI0QVRijFFetImfUFrg7s4xU+5tVnv3dqfdW6DOJH3p/mfOmd+emT079yzBtNQEKLXSCGFgaQSBgWVgaRDQkJrIMrA0CGhITWQZWBoENKQmsi4kWKtXr75k9syZK0G0iIHZGr6NJ42EEL8w0SHXdb8FwON1mOz1ukZWR0fHlVGptJOEuIWlbCGi3GQdjvVXcE4z8CuY34iYtwVBcDbD8ccMVTdYlmVdlxOiD8AN9ZxAeewSEz3ied479YywusCyLKs5J8TLADYBaJgCWMrE3wjDle6+fUfqZa8usBzHmUvM+2NRdYqJtggh+pm5NNnJSCmpgXkeE6kbcnNlPCZ6y/O8hyc7flL/usDqsKy2SIgvCZhRNrxjTkvLpu7u7qEsJ1KwrMUsxFejYxJ94Xre0notxfrAsu0lEjgcA/Oc6/tdWU/CsqyGnBBhzM53oZSL67XR1wvWMgkcHF0ezF1esfhsllFVGStv2/GU4diMgYFbew4cOF0PWwaWBlUtWI7jXA1A/dVsxNwG4O2KiIAeSbRzvH4TuU7MH8fsHI+ADURUM98SUXSyBHytu1xTwypY1lIIsZWBuSkmpZLP1tgyHCKiUyn6TURyeaxTBOCPFIOUmPldr1hU+2jqlh6W4zzOzM8DEKlHv4CFBAzt8f1ZOi6mhpVvb78fRGppaRnQcWZKtcwH3WJxhY7N1LA6OztnRaWSxcwrwdyoY+RC0jIRE3C8Qcqe3UHwg45vqWHpDDpdtQaWxp01sM4HLMuyFjQQPQDgBA0Pd7v9/b8l+VEoFFoRRfeB6DIRRb219g61V8pSaS0DtzPRB2EYfhoEgUoRxjT1+iOEWCKAuyDEkcHBwQ/7+/szex/NLLIKtn2YgSXlGexwfX99Eqy8bW8D8GD5+ueu7y9Pem/M5/P3QsqtOHfK+iMT3el53k8JsOblhFCnHQsBDEKIja7r7tYInprSTGB1rlo1K2xtPQmcKwdg4Kjn+zfVgKXOnCrXOdfUNGfXrl1Vk1anvf0ZIqokj0xSLtsTBPGX9FEzI6cdREeJaMQPYn7p+ra2p7q6umQWwDKBtX7NmjnDzc0nYg594/r+jTVgHQWwqHK9eXj40vf6+hTsMe0/sFRGvLzX9w9V0+bz+UWQUo090gTwylkpn0xatroADSwNYgaWgWWWYWUfMnuW2eAT9oO8bZunoUkdUjwtTJ6VAlJFYmAZWGMImKRUIygMLAPLZPAmg1cEzBGNOc+qvhuaPEvjKWFgTSGsXFPT7JRn8CAp70g6g5+Wx8oF236fgbUj94Po5z2uO5+IqtaxO+3tDxHR61All0S/S+YVvu9//785gx+pjw9D9fNWC6LoCW/v3k+SArn8G+OLDCwDsD2UcntSXdW0jKwYGPUGkfbLCFXqVPMnrekOS2NnHF9qYI3PaFRhYBlYGgQ0pBdFZFmW1ZQTYjhWb3oslPK2IAjU/6asddj2v+rvieiFXtd9Oikt0XUsk/MsZTRv26rk8NqyA38y0aNRFO2dImDCcZwrSMotIMqXfVDl3Ztd339TF0qSPktYrwJ4rGxIpQN/ARgAULWWKqsJlMdRGW0znSs7r3zTOCCY7+ktFj/LylZmsArr1l3DjY0fxaIrKx8nMo4EUc+ChQs3ZFVuNPKyMRFPqvVRVXcNwBoS4rXzCUzVtzPgh1JuDoIgzQcEqRFkBktZVMAao+gqmcttJKK7Acyfwo8MTjFwCFJuGzpzZn9fQr1XajJVhJnCmowjF0NfA0vjLhlYBpYGAQ2piSwDS4OAhtREloGlQUBDaiLLwNIgoCE1kWVgaRDQkP4D4IRjiHgn8yoAAAAASUVORK5CYII=);
+    background-size: 100% 100%
+}
+
+.icon-del,.icon-pc {
+    height: 60rpx;
+    margin: 0 auto;
+    width: 60rpx
+}
+
+.icon-pc {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAD7ElEQVR4Xu2bTWhcVRTHf+e9OBp0kVKkfsSV4gdIwVJQ6EbQhaBoFIIbl+G+EGNdSBcuJFNcuLFgSwwzN7iKGxnQKiKCunAhWBAFUfxAV8ZaETFCdWLMzClPJyXazMd5Mw0z4dzt+5875/7ye2+GmRPBV88EpOekB3FYBgkclsMyEDBE3SyHZSBgiLpZDstAwBB1sxyWgYAh6mYNEla5XE5WV1fvFJGjSZJMqep+w/5DHRWRX1X1zWazeXJycvKLcrnc7NRwV7NCCNPACeCmoT55f839ADwTY6wVhjUzM3NHkiSngVv762Ukqr8FHokxft2u245mhRAC8BIwDjSAj4DTqvrXSBy/Q5MiciUwBRwBUqCeJMnTlUpluSis54Dj8M+3E98BD8QYvx91UFv9hxBuBt4FbgEUWIgxPl8U1gJQbhWfGRsbm1paWjq3V2DNzc1dt7m5mT9m7m6dqRxjzOXYcXW7DS/CEpGP0zR9dK/BajQab6jqPQ6ryy2Qm+WwenxOOKweQeUxh+WwDAQMUTfLYRkIGKJulsMyEDBE3SyHZSBgiLpZDstAwBB1sxyWgYAh6mY5LAMBQ9TNclgGAoaom+WwDAQMUTfLYRkIGKKXzSzgkzRNn6jX6z8b+hnq6Pj4+IFGo/EqcLjV6GB+ZAV+A84A60NNwNbcVa1fo/cNGpatjdFMD8ysc6r6DvDHaHLYseurReRB4MBAzfJZh39HidquEML2KZrPSqXSQ4uLi2f3ilnz8/M3bGxsvA3c1bdZWZY9paovAiXgbyCfXaqpasfZy1GAKSIJkI+A5jNoVwAbwLEY46l2/Xcz6xDwFnDjtg3qwMhP/gH55F8+0bi1fgQejjF+WgjW9PR0OjExkYnIy6NgSz89quqTa2tr1Vqtlo+D7ri6TivnVVmWPa6qzwLXq2pJpKeyIr2PAddsKzwPbBbZqFuNqiIi+a33k4i8UK1WX+tW0+upZXZ29lpVvR3Yp6q91nV7/f9cV9WDInJxTFFVF0Tkc9MmPYZFRJvN5lqapl9VKpVfWjOlHasvy6F77PeSWJZl96nq+1sXROT+arX6QdH9Bl3nsAxEHdYQwpIQQv7B71D+BtH23UbkNuDotuunVPWb/+dbz5uzSZK8F2P803DevqK7YlaWZY+p6ivARF/dXlr8Zf4fEjHG3we8b/GPDv02EkKYV9UTItLWqqKvoar3Li8vf1i03lK3W2YdVtWqiBxU1fyz1CDWeVV9fX19fW5lZWVXvgnZFViDIDMMezgsw1/BYTksAwFD1M1yWAYChqib5bAMBAxRN8thGQgYom6WwzIQMETdLIdlIGCIulkGWBcA/kHEagESmFAAAAAASUVORK5CYII=);
+    background-size: 100% 100%
+}
+
+.tips-nomore {
+    color: #777;
+    font-size: 15px;
+    padding: 20rpx 30rpx;
+    text-align: center
+}

@@ -1,0 +1,17 @@
+<view class="user-condition">
+    <title-bar bind:__l="__l" vueId="90c56c14-1"></title-bar>
+    <view class="condition-list">
+        <view class="condition-list-item" wx:for="{{$root.l0}}" wx:key="index">
+            <view bindtap="__e" class="condition-item-msg" data-event-opts="{{[ [ 'tap',[ [ 'handleSearch',['$0'],[ [ ['listData','',index] ] ] ] ] ] ]}}">
+                <view class="condition-item-title">{{item[$orig].name}}</view>
+                <view class="condition-item-content">{{item.m0}}</view>
+                <view class="condition-item-time">{{item.m1}}</view>
+            </view>
+            <view bindtap="__e" class="condition-item-status" data-event-opts="{{[ [ 'tap',[ [ 'handleRemove',['$0'],[ [ ['listData','',index] ] ] ] ] ] ]}}">
+                <view class="{{['condition-itme-icon',item[$orig].type==2?'icon-del':'icon-pc']}}"></view>
+                <text wx:if="{{item[$orig].type!=2}}">PC端</text>
+            </view>
+        </view>
+    </view>
+    <view class="tips-nomore" wx:if="{{isShowNoMore}}">没有更多了</view>
+</view>

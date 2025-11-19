@@ -1,0 +1,88 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.collection-edit {
+    border-top: 1px solid #999;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 1200rpx;
+    padding: 0 30rpx
+}
+
+.collection-search-bar {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    margin: 180rpx 0 0;
+    padding: 50rpx 0
+}
+
+.collection-search-bar wx-input {
+    border: 1px solid #c4c4c4;
+    border-radius: 30rpx;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 28rpx;
+    height: 50rpx;
+    margin: 0 40rpx 0 20rpx;
+    padding: 5rpx 20rpx
+}
+
+.collection-search-label {
+    color: #333;
+    -webkit-flex: 0 1 180rpx;
+    flex: 0 1 180rpx;
+    font-size: 32rpx
+}
+
+.collection-search-handle {
+    bottom: 0;
+    left: 50%;
+    margin: 100rpx 0;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.collection-search-handle .collection-search-btn {
+    background-color: #9b0000;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 32rpx;
+    height: 76rpx;
+    letter-spacing: 4rpx;
+    line-height: 76rpx;
+    width: 456rpx
+}

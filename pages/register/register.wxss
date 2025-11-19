@@ -1,0 +1,82 @@
+.register {
+    padding: 100rpx 80rpx 0
+}
+
+.register-msg {
+    font-size: $uni-size-md;
+    font-weight: bolder;
+    margin: 180rpx 0 130rpx
+}
+
+.form-item {
+    color: #333;
+    font-size: $uni-size-xs;
+    margin: 0 0 54rpx
+}
+
+.icon-form-required {
+    color: #9b0000;
+    float: left;
+    margin: 4rpx 12rpx 0 0
+}
+
+.form-item wx-input {
+    border: 1px solid #c4c4c4;
+    border-radius: 30rpx;
+    float: left;
+    font-size: $uni-size-xs;
+    height: 66rpx;
+    line-height: 66rpx;
+    padding: 0 32rpx;
+    width: 80%
+}
+
+.form-radio {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 0 60rpx
+}
+
+.form-radio wx-text {
+    color: #c4c4c4;
+    font-size: 22rpx
+}
+
+.icon-radio {
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    height: 26rpx;
+    margin: 0 16rpx 0 0;
+    width: 26rpx
+}
+
+.radio-select {
+    background-color: #9b0000
+}
+
+.radio-unselect {
+    background-color: #fff
+}
+
+.form-submit {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.form-submit-btn {
+    background-color: #9b0000;
+    border-radius: 30px;
+    color: #fff;
+    font-size: $uni-size-md;
+    height: 80rpx;
+    letter-spacing: 6px;
+    line-height: 80rpx;
+    text-align: center;
+    width: 560rpx
+}

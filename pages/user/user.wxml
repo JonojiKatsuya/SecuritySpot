@@ -1,0 +1,26 @@
+<view class="personal">
+    <view class="user_box">
+        <view class="user_no"></view>
+        <view bindtap="__e" class="user_show" data-event-opts="{{[ [ 'tap',[ [ 'handleCheck',['$event'] ] ] ] ]}}">
+            <view class="avatar">
+                <image mode src="{{avatarUrl}}"></image>
+            </view>
+            <view class="info">
+                <view class="nick_name">{{''+nickName+''}}</view>
+            </view>
+        </view>
+        <image class="banner-bg" mode="aspectFill" src="/static/cause/banner_bg@2x.png"></image>
+    </view>
+    <view class="user-list-box">
+        <text class="user-list-title">常用功能</text>
+        <view class="user-list">
+            <view bindtap="__e" class="{{['user-list-item',!item.url?'user-contact':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleSelect',['$0'],[ [ ['listData','',index] ] ] ] ] ] ]}}" wx:for="{{listData}}" wx:key="index">
+                <view class="icon-icons" style="{{'background:'+'url('+item.icon+')'+';'+'background-size:'+'contain'+';'}}"></view>
+                <view class="user-list-content">
+                    <button openType="contact" wx:if="{{!item.url}}">{{''+item.label+''}}</button>
+                    <text wx:else>{{item.label}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

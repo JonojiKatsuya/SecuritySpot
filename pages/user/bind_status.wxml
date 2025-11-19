@@ -1,0 +1,16 @@
+<view class="bind_account">
+    <title-bar bind:__l="__l" vueId="4ade0086-1"></title-bar>
+    <view class="bind_account_wrap">
+        <view class="bind_ok" wx:if="{{current==1}}">
+            <radio checked="true" value="r"></radio>
+            <view class="bind_name">{{'您已绑定'+accName+'企业账号'}}</view>
+        </view>
+        <view class="bind_waiting" wx:if="{{current==0}}">
+            <view class="bind_img"></view>
+            <view class="bind_info_wt">{{'您已向用户名'+accName+'申请绑定'}}</view>
+            <view class="bind_info_wt">请耐心等待消息</view>
+            <view class="bind_info_wt">或者您可以联系该账号管理员进行同意绑定操作</view>
+        </view>
+        <button bindtap="__e" class="close_bind base" data-event-opts="{{[ [ 'tap',[ [ 'handleCloseBind',['$event'] ] ] ] ]}}" type="default" wx:if="{{current!=2}}">取消绑定</button>
+    </view>
+</view>

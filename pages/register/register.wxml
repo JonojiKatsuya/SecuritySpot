@@ -1,0 +1,33 @@
+<view class="register">
+    <title-bar bind:__l="__l" vueId="9a676040-1"></title-bar>
+    <view class="register-msg">完善以下资料</view>
+    <uni-forms bind:__l="__l" class="vue-ref" data-ref="registerForm" value="{{registerForm}}" vueId="9a676040-2" vueSlots="{{['default']}}">
+        <uni-forms-item bind:__l="__l" class="form-item" name="password" vueId="{{'9a676040-3'+','+'9a676040-2'}}" vueSlots="{{['default']}}">
+            <view class="icon-form-required">*</view>
+            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','password','$event',[] ],['registerForm'] ] ] ] ]}}" password="true" placeholder="请输入6-12位密码" type="text" value="{{registerForm.password}}"></input>
+        </uni-forms-item>
+        <uni-forms-item bind:__l="__l" class="form-item" name="confirm" vueId="{{'9a676040-4'+','+'9a676040-2'}}" vueSlots="{{['default']}}">
+            <view class="icon-form-required">*</view>
+            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','confirm','$event',[] ],['registerForm'] ] ] ] ]}}" password="true" placeholder="请再次输入密码" type="text" value="{{registerForm.confirm}}"></input>
+        </uni-forms-item>
+        <uni-forms-item bind:__l="__l" class="form-item" name="name" vueId="{{'9a676040-5'+','+'9a676040-2'}}" vueSlots="{{['default']}}">
+            <view class="icon-form-required">*</view>
+            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','name','$event',[] ],['registerForm'] ] ] ] ]}}" placeholder="请输入您的姓名" type="text" value="{{registerForm.name}}"></input>
+        </uni-forms-item>
+        <uni-forms-item bind:__l="__l" class="form-item" name="email" vueId="{{'9a676040-6'+','+'9a676040-2'}}" vueSlots="{{['default']}}">
+            <view class="icon-form-required">*</view>
+            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','email','$event',[] ],['registerForm'] ] ] ] ]}}" placeholder="请输入您的邮箱" type="text" value="{{registerForm.email}}"></input>
+        </uni-forms-item>
+        <uni-forms-item bind:__l="__l" class="form-item" name="employer" vueId="{{'9a676040-7'+','+'9a676040-2'}}" vueSlots="{{['default']}}">
+            <view class="icon-form-required">*</view>
+            <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','employer','$event',[] ],['registerForm'] ] ] ] ]}}" placeholder="请输入您的工作单位" type="text" value="{{registerForm.employer}}"></input>
+        </uni-forms-item>
+        <view bindtap="__e" class="form-item form-radio" data-event-opts="{{[ [ 'tap',[ [ 'handleRadio',['$event'] ] ] ] ]}}">
+            <view class="{{['icon-radio',registerForm.agreement?'radio-select':'radio-unselect']}}"></view>
+            <text>我已同意并接受《北大法宝服务条款》</text>
+        </view>
+        <view class="form-item form-submit">
+            <view bindtap="__e" class="form-submit-btn" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}" disabled="{{!registerForm.agreement}}">绑定手机号</view>
+        </view>
+    </uni-forms>
+</view>

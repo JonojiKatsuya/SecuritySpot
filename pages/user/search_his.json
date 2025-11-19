@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "title-bar": "pages\\user\\components\\title-bar\\title-bar",
+    "uni-load-more": "pages\\user\\components\\uni-load-more\\uni-load-more"
+  }
+}

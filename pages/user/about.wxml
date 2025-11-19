@@ -1,0 +1,16 @@
+<view class="about">
+    <title-bar bind:__l="__l" vueId="0ab2b778-1"></title-bar>
+    <view class="img_box image">
+        <image mode src="../../static/search/search_logo.png"></image>
+    </view>
+    <view class="row">{{Abstract}}</view>
+    <view class="img_box">
+        <image mode class="fabao" src="../../static/search/about.png"></image>
+    </view>
+    <view class="row">{{info}}</view>
+    <view class="about_info_footer">
+        <view>联系我们</view>
+        <view>电话：400-810-8266</view>
+        <view>邮箱：info@chinalawinfo.com</view>
+    </view>
+</view>

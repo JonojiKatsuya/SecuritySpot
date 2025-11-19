@@ -1,0 +1,155 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.personal {
+    background-color: #fafbff;
+    height: 100vh
+}
+
+.personal .user_box {
+    display: -webkit-flex;
+    display: flex;
+    height: 320rpx;
+    padding: 0 44rpx;
+    position: relative
+}
+
+.personal .user_box .banner-bg {
+    height: 320rpx;
+    position: absolute;
+    right: 0;
+    width: 100%
+}
+
+.personal .user_show {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: 180rpx;
+    margin-top: 140rpx;
+    z-index: 10
+}
+
+.personal .avatar wx-image {
+    background-color: #1967dd;
+    border-radius: 50%;
+    height: 110rpx;
+    margin-right: 20rpx;
+    width: 110rpx
+}
+
+.personal .info .nick_name {
+    font-size: 30rpx;
+    font-weight: 600;
+    margin-bottom: 16rpx
+}
+
+.personal .info .phone {
+    border: 1rpx solid #dd524d;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    padding: 10rpx 30rpx
+}
+
+.personal .user-list-box {
+    background: #fff;
+    border: 1rpx solid #fff;
+    border-radius: 24rpx;
+    box-shadow: 0 4px 32rpx 0 rgba(11,16,102,.04);
+    margin: 0 24rpx;
+    padding-top: 32rpx
+}
+
+.personal .user-list-box .user-list-title {
+    color: #13151f;
+    font-size: 32rpx;
+    font-weight: 500;
+    margin: 32rpx
+}
+
+.personal .user-list-box .user-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.personal .user-list-item {
+    -webkit-align-items: center;
+    align-items: center;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-size: 30rpx;
+    padding: 20rpx 30rpx
+}
+
+.personal .user-list-item .icon-icons {
+    height: 60rpx;
+    margin: 0 18rpx;
+    width: 60rpx
+}
+
+.personal .user-list-item .user-list-content {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+    flex: 1
+}
+
+.personal .user-list-item wx-button {
+    background-color: #fff;
+    font-size: 30rpx;
+    text-align: left;
+    width: 100%
+}
+
+.personal .user-contact {
+    -webkit-align-items: 0;
+    align-items: 0;
+    display: -webkit-flex;
+    display: flex
+}
+
+.personal .user-contact wx-button {
+    font-size: 28rpx;
+    margin: 0;
+    padding: 0
+}
+
+.personal .user-contact wx-button::after {
+    border: 0!important;
+    outline: 0!important
+}

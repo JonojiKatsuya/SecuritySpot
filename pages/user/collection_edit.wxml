@@ -1,0 +1,10 @@
+<view class="collection-edit">
+    <title-bar bind:__l="__l" vueId="7c79b874-1"></title-bar>
+    <view class="collection-search-bar">
+        <text class="collection-search-label">收藏夹名称</text>
+        <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','folderName','$event',[] ] ] ] ] ]}}" maxlength="20" placeholder="请输入收藏夹名称" type="text" value="{{folderName}}"></input>
+    </view>
+    <view class="collection-search-handle">
+        <button bindtap="__e" class="collection-search-btn" data-event-opts="{{[ [ 'tap',[ [ 'handleSave',['$event'] ] ] ] ]}}">保存</button>
+    </view>
+</view>

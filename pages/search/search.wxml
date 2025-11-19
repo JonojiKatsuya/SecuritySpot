@@ -1,0 +1,36 @@
+<view class="search">
+    <title-bar bind:__l="__l" vueId="50cad900-1"></title-bar>
+    <view class="search-panel">
+        <search-bar bind:__l="__l" bind:returnSaveHistory="__e" class="vue-ref" data-event-opts="{{[ [ '^returnSaveHistory',[ ['returnSaveHistory'] ] ] ]}}" data-ref="searchbar" isFocus="{{true}}" vueId="50cad900-2"></search-bar>
+        <category-tab activeTab="{{activeTab}}" bind:__l="__l" bind:returnCategoryTabValue="__e" data-event-opts="{{[ [ '^returnCategoryTabValue',[ ['returnCategoryTabValue'] ] ] ]}}" tabList="{{tabList}}" vueId="50cad900-3"></category-tab>
+    </view>
+    <view class="search-params">
+        <view class="search-content search-history" wx:if="{{$root.g0}}">
+            <view class="search-content-title">
+                <view class="search-content-title-l">检索历史<text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleOpenMore',['$event'] ] ] ] ]}}" wx:if="{{$root.g1>10}}">查看更多历史</text>
+                    <view class="{{['icon-more',showMoreHistory?'icon-more-open':'icon-more-close']}}" wx:if="{{$root.g2>10}}"></view>
+                </view>
+                <view class="search-content-title-r" wx:if="{{showDeleteBtn}}">
+                    <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'deleteAll',['$event'] ] ] ] ]}}">全部删除</text>
+                    <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">完成</text>
+                </view>
+                <view bindtap="__e" class="search-content-title-r icon-del" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" wx:else></view>
+            </view>
+            <view class="search-content-list">
+                <view class="search-content-item" wx:if="{{index<historyLen}}" wx:for="{{$root.l0}}">
+                    <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'queryByHistory',['$0'],[ [ ['historyData','',index] ] ] ] ] ] ]}}">{{item.m0}}</view>
+                    <view bindtap="__e" class="icon-closed" data-event-opts="{{[ [ 'tap',[ [ 'deleteHistory',['$0'],[ [ ['historyData','',index] ] ] ] ] ] ]}}" wx:if="{{showDeleteBtn}}"></view>
+                </view>
+            </view>
+        </view>
+        <view class="search-content search-condition" wx:if="{{$root.g3}}">
+            <view class="search-content-title">
+                <view class="search-content-title-l">我的条件</view>
+                <view class="search-content-title-r"></view>
+            </view>
+            <view class="search-content-list">
+                <view bindtap="__e" class="search-content-item" data-event-opts="{{[ [ 'tap',[ [ 'queryByCondition',['$0'],[ [ ['conditionData','',index] ] ] ] ] ] ]}}" wx:for="{{conditionData}}">{{''+item.name+''}}</view>
+            </view>
+        </view>
+    </view>
+</view>

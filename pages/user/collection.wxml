@@ -1,0 +1,38 @@
+<view class="collction">
+    <title-bar bind:__l="__l" vueId="c43e3da6-1"></title-bar>
+    <view class="search_box" wx:if="{{!isEdit}}">
+        <view bindtap="__e" class="title" data-event-opts="{{[ [ 'tap',[ [ 'handleEdit',['$event'] ] ] ] ]}}">编辑</view>
+        <view class="uni-input_box">
+            <input bindinput="__e" class="uni-input" confirmType="search" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','searchText','$event',[] ],['queryParams'] ] ] ] ]}}" value="{{queryParams.searchText}}"></input>
+            <image mode bindtap="__e" class="search_icon" data-event-opts="{{[ [ 'tap',[ [ 'init',['$event'] ] ] ] ]}}" src="../../static/mfd/icon_search.png"></image>
+        </view>
+        <view bindtap="__e" class="title" data-event-opts="{{[ [ 'tap',[ [ 'openCreateCollFile',['$event'] ] ] ] ]}}">新建</view>
+    </view>
+    <view class="search_box edit-staus" wx:else>
+        <view bindtap="__e" class="select-all" data-event-opts="{{[ [ 'tap',[ [ 'handleSelectAll',['$event'] ] ] ] ]}}">
+            <view class="{{['list-item-select',isSelectAll?'list-item-select-active':'']}}"></view>
+            <view style="margin:0 26rpx;">全选</view>
+        </view>
+        <view bindtap="__e" class="cancel-btn" data-event-opts="{{[ [ 'tap',[ [ 'handleCancel',['$event'] ] ] ] ]}}">取消</view>
+    </view>
+    <view class="collection-list">
+        <view bindtap="__e" class="collection-list-item" data-event-opts="{{[ [ 'tap',[ [ 'handleSelect',['$0'],[ [ ['files','',index] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:key="index">
+            <view class="{{['list-item-select',item.g0!=-1?'list-item-select-active':'']}}" wx:if="{{isEdit}}"></view>
+            <image mode class="list-item-icon" src="../../static/detail/icon_book.png"></image>
+            <view class="list-item-content">{{''+item[$orig].folderName+''}}</view>
+        </view>
+    </view>
+    <view class="collection-handle" wx:if="{{isEdit}}">
+        <view bindtap="__e" class="{{['collection-rename',isDisabled?'collection-disabled ':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleRename',['$event'] ] ] ] ]}}">重命名</view>
+        <view bindtap="__e" class="collection-remove" data-event-opts="{{[ [ 'tap',[ [ 'handleRemove',['$event'] ] ] ] ]}}">删除</view>
+    </view>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popup" type="bottom" vueId="c43e3da6-2" vueSlots="{{['default']}}" wx:if="{{false}}">
+        <view class="popup_wrapper">
+            <view class="popup_title">新建收藏夹</view>
+            <view class="popup_body">
+                <input bindinput="__e" class="uni-input" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','fileName','$event',[] ] ] ] ] ]}}" placeholder="请输入文件夹名称" value="{{fileName}}"></input>
+                <button bindtap="__e" class="popup-submit" data-event-opts="{{[ [ 'tap',[ [ 'CreateCollFile',['$event'] ] ] ] ]}}">保存</button>
+            </view>
+        </view>
+    </uni-popup>
+</view>

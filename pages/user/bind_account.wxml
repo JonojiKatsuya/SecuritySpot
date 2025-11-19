@@ -1,0 +1,21 @@
+<view class="bind_account" wx:if="{{show}}">
+    <title-bar bind:__l="__l" vueId="780d4480-1"></title-bar>
+    <view class="bind_account_wrap">
+        <view class="form_title">企业账号</view>
+        <input bindinput="__e" class="uni-input" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','account','$event',[] ],['formData'] ] ] ] ]}}" placeholder="请输入企业账号用户名" value="{{formData.account}}"></input>
+        <view class="form_title">绑定方式</view>
+        <radio-group bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'radioChange',['$event'] ] ] ] ]}}">
+            <view>
+                <label class="form_radio">
+                    <radio checked="{{bindingType==1}}" color="#9B0000" value="1"></radio>密码绑定</label>
+                <input bindinput="__e" class="uni-input" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','password','$event',[] ],['formData'] ] ] ] ]}}" password="true" placeholder="请输入被绑定账号密码" value="{{formData.password}}"></input>
+            </view>
+            <view>
+                <label class="form_radio">
+                    <radio checked="{{bindingType==2}}" color="#9B0000" value="2"></radio>申请验证绑定</label>
+                <input bindinput="__e" class="uni-input" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '$0','applyMessage','$event',[] ],['formData'] ] ] ] ]}}" placeholder="备注" value="{{formData.applyMessage}}"></input>
+            </view>
+        </radio-group>
+        <button bindtap="__e" class="base" data-event-opts="{{[ [ 'tap',[ [ 'handleBind',['$event'] ] ] ] ]}}" type="default">绑定</button>
+    </view>
+</view>

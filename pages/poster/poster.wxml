@@ -1,0 +1,41 @@
+<view class="post-wrapper">
+    <title-bar bind:__l="__l" vueId="522988a0-1"></title-bar>
+    <view class="poster">
+        <view class="poster-panel">
+            <view class="poster-bg">
+                <image mode="aspectFill" src="{{bgUrl}}"></image>
+            </view>
+            <view class="poster-msg">
+                <view class="poster-msg-avatarUrl">
+                    <image mode src="{{avatarUrl}}"></image>
+                </view>
+                <view class="poster-msg-nickname">{{nickName}}</view>
+                <view class="poster-msg-cont">
+                    <view class="poster-msg-title">{{''+detailsTitle+''}}</view>
+                    <view class="poster-msg-code">
+                        <image mode src="{{qrCodeUrl}}"></image>
+                    </view>
+                </view>
+                <view class="poster-msg-tips">扫码查看详情，生成专属海报</view>
+            </view>
+        </view>
+        <view class="poster-handle">
+            <scroll-view class="poster-handle-list" scrollX="true">
+                <view bindtap="__e" class="poster-handle-item" data-event-opts="{{[ [ 'tap',[ [ 'handleSelectBg',['$0'],[ [ ['bgList','',index] ] ] ] ] ] ]}}" style="{{'background:'+'url('+item.abbreviatePath+') 0 0 no-repeat'+';'+'background-size:'+'100% 100%'+';'}}" wx:for="{{bgList}}"></view>
+            </scroll-view>
+            <view bindtap="__e" class="poster-handle-render" data-event-opts="{{[ [ 'tap',[ [ 'renderBase64ToUrl',['$event'] ] ] ] ]}}" wx:if="{{showExportBtn}}">生成海报</view>
+        </view>
+    </view>
+    <view class="poster-canvas">
+        <canvas canvasId="cvs" id="cvs"></canvas>
+    </view>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popupAuth" maskClick="{{false}}" type="center" vueId="522988a0-2" vueSlots="{{['default']}}">
+        <view class="popup-auth">
+            <view class="popup-auth-content">请打开保存图片权限</view>
+            <view class="popup-auth-handle">
+                <view bindtap="__e" class="popup-auth-cancel" data-event-opts="{{[ [ 'tap',[ [ 'handleClose',['$event'] ] ] ] ]}}">取消</view>
+                <button bindtap="__e" class="popup-auth-save" data-event-opts="{{[ [ 'tap',[ [ 'handleSet',['$event'] ] ] ] ]}}" openType="openSetting" type="default">设置</button>
+            </view>
+        </view>
+    </uni-popup>
+</view>

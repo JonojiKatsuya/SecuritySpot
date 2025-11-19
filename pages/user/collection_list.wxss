@@ -1,0 +1,97 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.collction_wrapper {
+    margin: 180rpx 0 0
+}
+
+.collction_list {
+    border-top: 1px solid #999
+}
+
+.collction_list .collction_item {
+    font-size: 12px;
+    padding: 12px 15px
+}
+
+.collction_list .load_more {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.collction_list .load_more wx-image {
+    height: 30px;
+    width: 30px
+}
+
+.list-item-baseInfo {
+    border-bottom: 8rpx solid #eee;
+    position: relative
+}
+
+.list-item-title {
+    -webkit-align-items: center;
+    align-items: center;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 30rpx;
+    font-weight: 700;
+    margin: 16rpx 0;
+    padding: 0 30rpx;
+    width: 80%
+}
+
+.title-index {
+    border: 1px solid #999;
+    border-radius: 2px;
+    color: #333;
+    font-size: 28rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    margin: 0 14rpx 0 0;
+    padding: 6rpx;
+    text-align: center;
+    width: 24rpx
+}
+
+.list-item-discribe {
+    color: #666;
+    font-size: 28rpx;
+    margin: 16rpx 0;
+    padding: 0 30rpx 0 56rpx;
+    width: 70%
+}

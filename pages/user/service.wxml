@@ -1,0 +1,6 @@
+<view class="service">
+    <title-bar bind:__l="__l" vueId="0013355c-1"></title-bar>
+    <view class="img_box">
+        <image mode class="search_icon" src="../../static/user/service.png"></image>
+    </view>
+</view>
