@@ -1,0 +1,33 @@
+<view class="case-tab">
+    <scroll-view class="case-tab-bar" scrollX="true">
+        <view bindtap="__e" class="{{['case-tab-item',item.key==activeKey?'case-tab-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'renderContent',['$0'],[ [ ['tabList','',index] ] ] ] ] ] ]}}" wx:if="{{info[item.key]}}" wx:for="{{tabList}}" wx:key="index">{{''+item.label+''}}</view>
+    </scroll-view>
+    <view class="case-tab-content" wx:if="{{info.Cpgz&&activeKey=='Cpgz'}}">
+        <view bindtap="__e" class="mask-panel" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetails',['$event'] ] ] ] ]}}" wx:if="{{isShowAllInfo}}"></view>
+        <view class="cpgz-multi" wx:if="{{k.g0}}" wx:for="{{$root.l0}}" wx:for-index="i" wx:for-item="k" wx:key="i">{{''+k[$orig]+''}}<rich-text nodes="{{'...'+htmlStr}}" wx:if="{{k.g1>3}}"></rich-text>
+        </view>
+        <view class="cpgz-single" wx:if="{{$root.g2<=1}}">{{''+info.Cpgz+''}}</view>
+    </view>
+    <view class="{{['case-tab-content',isShowAllInfo?'case-tab-content-auto':'case-tab-content-hei']}}" wx:if="{{info.Ascertain&&activeKey=='Ascertain'}}">
+        <view bindtap="__e" class="mask-panel" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetails',['$event'] ] ] ] ]}}" wx:if="{{isShowAllInfo}}"></view>
+        <rich-text nodes="{{toggleStatus?$root.g3+'...'+htmlStr:info.Ascertain}}"></rich-text>
+    </view>
+    <view class="{{['case-tab-content',isShowAllInfo?'case-tab-content-auto':'case-tab-content-hei']}}" wx:if="{{info.Identified&&activeKey=='Identified'}}">
+        <view bindtap="__e" class="mask-panel" data-event-opts="{{[ [ 'tap',[ [ 'linkToDetails',['$event'] ] ] ] ]}}" wx:if="{{isShowAllInfo}}"></view>
+        <rich-text nodes="{{toggleStatus?$root.g4+'...'+htmlStr:info.Identified}}"></rich-text>
+    </view>
+    <view class="{{['case-tab-content',isShowAllInfo?'case-tab-content-auto':'case-tab-content-hei']}}" wx:if="{{info.AccordingLaw&&activeKey=='AccordingLaw'}}">
+        <view class="case-tab-content-line" wx:for="{{$root.l1}}" wx:for-index="cindex" wx:for-item="citem" wx:key="cindex">
+            <rich-text nodes="{{citem.m0}}"></rich-text>
+        </view>
+    </view>
+    <view class="{{['case-tab-content',isShowAllInfo?'case-tab-content-auto':'case-tab-content-hei']}}" wx:if="{{info.HisDocuments&&activeKey=='HisDocuments'}}">
+        <view class="case-tab-content-line" wx:for="{{$root.l2}}" wx:for-index="cindex" wx:for-item="citem" wx:key="cindex">
+            <rich-text nodes="{{citem.m1}}"></rich-text>
+        </view>
+    </view>
+    <view bindtap="__e" class="case-tab-more" data-event-opts="{{[ [ 'tap',[ [ 'showAllInfo',['$event'] ] ] ] ]}}" wx:if="{{toggleStatus}}">
+        <view class="case-more-btn down-btn" wx:if="{{!isShowAllInfo}}"></view>
+        <view class="case-more-btn up-btn" wx:else></view>
+    </view>
+</view>

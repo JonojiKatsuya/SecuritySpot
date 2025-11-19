@@ -1,0 +1,20 @@
+<view class="catalog-tree">
+    <view class="catalog-title">目录</view>
+    <scroll-view class="catalog-list" scrollY="true">
+        <view catchtap="__e" class="{{['catalog-list-item','list-lv1',item.toggle?'catalog-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleToggle',['$0'],[ [ ['list','code',item.code] ] ] ] ] ] ]}}" wx:for="{{list}}" wx:key="code">
+            <text>{{item.title}}</text>
+            <view catchtap="__e" class="{{['catalog-list-item','list-lv2',citem.toggle?'catalog-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleToggle',['$0'],[ [ ['list','code',item.code],['children','code',citem.code] ] ] ] ] ] ]}}" wx:for="{{item.children}}" wx:for-index="cindex" wx:for-item="citem" wx:key="code">
+                <text>{{citem.title}}</text>
+                <view catchtap="__e" class="{{['catalog-list-item','list-lv3',ccitem.toggle?'catalog-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleToggle',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code] ] ] ] ] ] ]}}" wx:for="{{citem.children}}" wx:for-index="ccindex" wx:for-item="ccitem" wx:key="code">
+                    <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleSelectItem',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code] ] ] ] ] ] ]}}">{{ccitem.title}}</text>
+                    <view catchtap="__e" class="{{['catalog-list-item','list-lv4',cccitem.toggle?'catalog-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleToggle',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code],['children','code',cccitem.code] ] ] ] ] ] ]}}" wx:for="{{ccitem.children}}" wx:for-index="cccindex" wx:for-item="cccitem" wx:key="code">
+                        <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleSelectItem',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code],['children','code',cccitem.code] ] ] ] ] ] ]}}">{{cccitem.title}}</text>
+                        <view catchtap="__e" class="{{['catalog-list-item','list-lv5',ccccitem.toggle?'catalog-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleToggle',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code],['children','code',cccitem.code],['children','code',ccccitem.code] ] ] ] ] ] ]}}" wx:for="{{cccitem.children}}" wx:for-index="ccccindex" wx:for-item="ccccitem" wx:key="code">
+                            <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleSelectItem',['$0'],[ [ ['list','code',item.code],['children','code',citem.code],['children','code',ccitem.code],['children','code',cccitem.code],['children','code',ccccitem.code] ] ] ] ] ] ]}}">{{ccccitem.title}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

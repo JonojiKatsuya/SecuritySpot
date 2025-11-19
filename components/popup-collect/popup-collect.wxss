@@ -1,0 +1,107 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.popup-wrapper {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9
+}
+
+.popup-wrapper .popup-header {
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 15rpx 30rpx
+}
+
+.popup-wrapper .popup-body .popup-list {
+    height: 400rpx
+}
+
+.popup-wrapper .popup-body .popup-list .popup-list-item {
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 28rpx;
+    padding: 20rpx 30rpx
+}
+
+.popup-wrapper .popup-body .popup-list .popup-list-item .list-item-icon {
+    height: 83rpx;
+    margin: 0 20rpx;
+    width: 83rpx
+}
+
+.popup-wrapper .popup-body .popup-list .popup-list-item .list-item-content {
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 26rpx
+}
+
+.popup-wrapper .popup-body .popup-list .popup-list-item .list-item-select {
+    border: 1px solid #666;
+    border-radius: 50%;
+    -webkit-flex: 0 1 26rpx;
+    flex: 0 1 26rpx;
+    height: 26rpx;
+    margin: 0 8rpx;
+    width: 26rpx
+}
+
+.popup-wrapper .popup-body .popup-list .popup-list-item .list-item-select-active {
+    background-color: #9b0000;
+    border: 1px solid #9b0000
+}
+
+.popup-wrapper .popup-footer {
+    padding: 15rpx 0 60rpx
+}
+
+.popup-wrapper .popup-footer .popup-submit {
+    background-color: #9b0000;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 28rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    width: 60%
+}

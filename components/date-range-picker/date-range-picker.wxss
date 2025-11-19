@@ -1,0 +1,36 @@
+wx-button.base.data-v-4c4cadeb {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-4c4cadeb:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-4c4cadeb {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-4c4cadeb:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-4c4cadeb {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-4c4cadeb {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.date-range-picker.data-v-4c4cadeb {
+    display: -webkit-flex;
+    display: flex
+}

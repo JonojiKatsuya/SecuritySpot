@@ -1,0 +1,8 @@
+<view class="popup-tips">
+    <view class="popup-tips-icon"></view>
+    <view class="popup-tips-content">
+        <view>你查找的内容暂无结果</view>
+        <view>看看其他的吧</view>
+    </view>
+    <view bindtap="__e" class="popup-tips-btn" data-event-opts="{{[ [ 'tap',[ [ 'returnClose',['$event'] ] ] ] ]}}">确定</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "picker-date": "components\\date-range-picker\\components\\picker-date\\picker-date"
+  }
+}

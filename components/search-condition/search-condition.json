@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-popup": "components\\search-condition\\components\\uni-popup\\uni-popup",
+    "popup-condition": "components\\search-condition\\components\\popup-condition\\popup-condition"
+  }
+}

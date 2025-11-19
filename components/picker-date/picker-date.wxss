@@ -1,0 +1,55 @@
+wx-button.base.data-v-5368b927 {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-5368b927:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-5368b927 {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-5368b927:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-5368b927 {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-5368b927 {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.container.data-v-5368b927 {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.container .picker-input.data-v-5368b927 {
+    font-size: 28rpx;
+    font-weight: 400;
+    padding-left: 20rpx
+}
+
+.container .picker-placeholder.data-v-5368b927 {
+    color: #909399
+}
+
+.container .icon-more.data-v-5368b927 {
+    height: 28rpx;
+    width: 28rpx
+}

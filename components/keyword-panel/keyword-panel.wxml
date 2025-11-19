@@ -1,0 +1,5 @@
+<view class="keyword-panel" style="{{'height:'+'calc(132rpx - 180rpx + '+hei+'rpx)'+';'}}">
+    <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','keyword','$event',[] ] ] ] ] ]}}" placeholder="请输入关键词" type="text" value="{{keyword}}"></input>
+    <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'returnHandleSearch',['$event'] ] ] ] ]}}" style="margin:0 16rpx 0 0;" type="default">搜索</view>
+    <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'returnHandleCancel',['$event'] ] ] ] ]}}" type="default">取消</view>
+</view>

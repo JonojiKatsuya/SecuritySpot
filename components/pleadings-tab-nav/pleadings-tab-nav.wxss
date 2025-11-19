@@ -1,0 +1,76 @@
+wx-button.base.data-v-2a23d308 {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-2a23d308:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-2a23d308 {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-2a23d308:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-2a23d308 {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-2a23d308 {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.custom-tabs .tabs-nav.data-v-2a23d308 {
+    -webkit-overflow-scrolling: touch;
+    display: -webkit-flex;
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 18rpx
+}
+
+.custom-tabs .tabs-nav .tab-item.data-v-2a23d308 {
+    color: #969799;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    font-size: 32rpx;
+    font-weight: 400;
+    padding: 24rpx 32rpx 16rpx;
+    position: relative;
+    white-space: nowrap
+}
+
+.custom-tabs .tabs-nav .tab-item.active.data-v-2a23d308 {
+    color: #323233;
+    font-weight: 500
+}
+
+.custom-tabs .tabs-nav .tab-item.active .underline.data-v-2a23d308 {
+    background: #1967dd;
+    border-radius: 4rpx;
+    bottom: -9rpx;
+    height: 6rpx;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 56rpx
+}
+
+.custom-tabs .tabs-nav .tab-item.disabled.data-v-2a23d308 {
+    cursor: not-allowed;
+    opacity: .6
+}
+
+.custom-tabs .scrollable.data-v-2a23d308::-webkit-scrollbar {
+    display: none
+}

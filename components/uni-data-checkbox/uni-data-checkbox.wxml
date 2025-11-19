@@ -1,0 +1,31 @@
+<view class="uni-data-checklist">
+    <view class="uni-data-loading" wx:if="{{loading}}">
+        <uni-load-more bind:__l="__l" contentText="{{contentText}}" iconSize="{{18}}" iconType="snow" status="loading" vueId="7ca013a4-1"></uni-load-more>
+    </view>
+    <block wx:else>
+        <checkbox-group bindchange="__e" class="{{['checklist-group',mode==='list'?'is-list':'',wrap?'is-wrap':'']}}" data-event-opts="{{[ [ 'change',[ [ 'chagne',['$event'] ] ] ] ]}}" wx:if="{{multiple}}">
+            <label class="{{['checklist-box',item[$orig].labelClass]}}" style="{{item.s0}}" wx:for="{{$root.l0}}" wx:key="index">
+                <checkbox checked="{{item[$orig].selected}}" class="hidden" disabled="{{!!item[$orig].disabled}}" hidden="{{true}}" value="{{item[$orig].value+''}}"></checkbox>
+                <view class="{{['checkbox__inner',item[$orig].checkboxBgClass]}}" style="{{item.s1}}" wx:if="{{mode!=='tag'&&mode!=='list'||mode==='list'&&icon==='left'}}">
+                    <view class="{{['checkbox__inner-icon',item[$orig].checkboxClass]}}"></view>
+                </view>
+                <view class="{{['checklist-content',mode==='list'&&icon==='left'?'list-content':'']}}">
+                    <text class="{{['checklist-text',item[$orig].textClass]}}" style="{{item.s2}}">{{item[$orig].text}}</text>
+                    <view class="{{['checkobx__list',item[$orig].listClass]}}" style="{{item.s3}}" wx:if="{{mode==='list'&&icon==='right'}}"></view>
+                </view>
+            </label>
+        </checkbox-group>
+        <radio-group bindchange="__e" class="{{['checklist-group',mode==='list'?'is-list':'',wrap?'is-wrap':'']}}" data-event-opts="{{[ [ 'change',[ [ 'chagne',['$event'] ] ] ] ]}}" wx:else>
+            <label class="{{['checklist-box',item[$orig].labelClass]}}" style="{{item.s4}}" wx:for="{{$root.l1}}" wx:key="index">
+                <radio checked="{{item[$orig].selected}}" disabled="{{item[$orig].disabled}}" hidden="{{true}}" value="{{item[$orig].value+''}}"></radio>
+                <view class="{{['radio__inner',item[$orig].checkboxBgClass]}}" style="{{item.s5}}" wx:if="{{mode!=='tag'&&mode!=='list'||mode==='list'&&icon==='left'}}">
+                    <view class="{{['radio__inner-icon',item[$orig].checkboxClass]}}" style="{{item.s6}}"></view>
+                </view>
+                <view class="{{['checklist-content',mode==='list'&&icon==='left'?'list-content':'']}}">
+                    <text class="{{['checklist-text',item[$orig].textClass]}}" style="{{item.s7}}">{{item[$orig].text}}</text>
+                    <view class="{{['checkobx__list',item[$orig].listClass]}}" style="{{item.s8}}" wx:if="{{mode==='list'&&icon==='right'}}"></view>
+                </view>
+            </label>
+        </radio-group>
+    </block>
+</view>

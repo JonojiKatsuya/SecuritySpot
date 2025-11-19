@@ -1,0 +1,4 @@
+<view class="title-bar">
+    <view bindtap="__e" class="icon-item icon-back" data-event-opts="{{[ [ 'tap',[ [ 'handleBack',['$event'] ] ] ] ]}}" wx:if="{{showBack}}"></view>
+    <view bindtap="__e" class="icon-item icon-home" data-event-opts="{{[ [ 'tap',[ [ 'handleBackHome',['$event'] ] ] ] ]}}" wx:if="{{showHome}}"></view>
+</view>

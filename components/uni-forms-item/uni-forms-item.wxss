@@ -1,0 +1,119 @@
+wx-button.base.data-v-6be8a0f6 {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-6be8a0f6:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-6be8a0f6 {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-6be8a0f6:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-6be8a0f6 {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-6be8a0f6 {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.uni-forms-item.data-v-6be8a0f6 {
+    background-color: #fff;
+    margin-bottom: 40rpx;
+    position: relative;
+    text-align: left
+}
+
+.uni-forms-item__inner.data-v-6be8a0f6 {
+    display: -webkit-flex;
+    display: flex
+}
+
+.is-direction-left.data-v-6be8a0f6 {
+    -webkit-flex-direction: row;
+    flex-direction: row
+}
+
+.is-direction-top.data-v-6be8a0f6 {
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.uni-forms-item__label.data-v-6be8a0f6 {
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    font-size: 14px;
+    height: 36px;
+    margin-right: 5px;
+    padding: 5px 0;
+    width: 65px
+}
+
+.uni-forms-item__content.data-v-6be8a0f6 {
+    box-sizing: border-box;
+    min-height: 36px;
+    width: 100%
+}
+
+.label-icon.data-v-6be8a0f6 {
+    margin-right: 5px;
+    margin-top: -1px
+}
+
+.is-required.data-v-6be8a0f6 {
+    color: #dd524d
+}
+
+.uni-error-message.data-v-6be8a0f6 {
+    bottom: -34rpx;
+    color: #dd524d;
+    font-size: 20rpx;
+    left: 0;
+    position: absolute;
+    text-align: left
+}
+
+.uni-error-msg--boeder.data-v-6be8a0f6 {
+    bottom: 0;
+    line-height: 22px;
+    position: relative
+}
+
+.is-input-error-border.data-v-6be8a0f6 {
+    border-color: #dd524d
+}
+
+.uni-forms-item--border.data-v-6be8a0f6 {
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    padding: 10px 15px
+}
+
+.uni-forms-item-error.data-v-6be8a0f6 {
+    padding-bottom: 0
+}
+
+.is-first-border.data-v-6be8a0f6 {
+    border: none
+}

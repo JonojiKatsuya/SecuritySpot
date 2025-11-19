@@ -1,0 +1,4 @@
+<view class="date-range-picker data-v-4c4cadeb">
+    <picker-date bind:__l="__l" bind:input="__e" class="data-v-4c4cadeb" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','localStartTime','$event',[] ] ],['handleStartTimeChange'] ] ] ]}}" isShowArrow="{{false}}" placeholder="开始时间" value="{{localStartTime}}" vueId="0e0c0746-1"></picker-date>
+    <picker-date bind:__l="__l" bind:input="__e" class="data-v-4c4cadeb" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','localEndTime','$event',[] ] ],['handleEndTimeChange'] ] ] ]}}" isShowArrow="{{false}}" placeholder="结束时间" value="{{localEndTime}}" vueId="0e0c0746-2"></picker-date>
+</view>

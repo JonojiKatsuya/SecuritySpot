@@ -1,0 +1,114 @@
+wx-button.base.data-v-bc381f7e {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-bc381f7e:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-bc381f7e {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-bc381f7e:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-bc381f7e {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-bc381f7e {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.uni-badge.data-v-bc381f7e {
+    background-color: #f1f1f1;
+    background-color: initial;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    font-family: Helvetica Neue,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 20px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 0 6px;
+    text-align: center
+}
+
+.uni-badge--inverted.data-v-bc381f7e {
+    color: #f1f1f1;
+    padding: 0 5px 0 0
+}
+
+.uni-badge--default.data-v-bc381f7e {
+    background-color: #f1f1f1;
+    color: #333
+}
+
+.uni-badge--default-inverted.data-v-bc381f7e {
+    background-color: initial;
+    color: #999
+}
+
+.uni-badge--primary.data-v-bc381f7e {
+    background-color: #007aff;
+    color: #fff
+}
+
+.uni-badge--primary-inverted.data-v-bc381f7e {
+    background-color: initial;
+    color: #007aff
+}
+
+.uni-badge--success.data-v-bc381f7e {
+    background-color: #4cd964;
+    color: #fff
+}
+
+.uni-badge--success-inverted.data-v-bc381f7e {
+    background-color: initial;
+    color: #4cd964
+}
+
+.uni-badge--warning.data-v-bc381f7e {
+    background-color: #f0ad4e;
+    color: #fff
+}
+
+.uni-badge--warning-inverted.data-v-bc381f7e {
+    background-color: initial;
+    color: #f0ad4e
+}
+
+.uni-badge--error.data-v-bc381f7e {
+    background-color: #dd524d;
+    color: #fff
+}
+
+.uni-badge--error-inverted.data-v-bc381f7e {
+    background-color: initial;
+    color: #dd524d
+}
+
+.uni-badge--small.data-v-bc381f7e {
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}

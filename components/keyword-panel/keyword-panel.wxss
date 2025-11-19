@@ -1,0 +1,66 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.keyword-panel {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    padding: 0 30rpx;
+    position: fixed;
+    top: 180rpx;
+    width: calc(100% - 60rpx);
+    z-index: 9
+}
+
+.keyword-panel wx-input {
+    border: 1px solid #999;
+    border-radius: 40rpx;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 32rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 0 40rpx 0 0;
+    padding: 0 24rpx
+}
+
+.keyword-panel wx-view {
+    background-color: #fff;
+    color: #9b0000;
+    -webkit-flex: 0 1 80rpx;
+    flex: 0 1 80rpx;
+    font-size: 32rpx
+}

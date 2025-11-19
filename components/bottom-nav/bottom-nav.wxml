@@ -1,0 +1,14 @@
+<view class="bottom-nav">
+    <view bindtap="__e" class="bottom-nav-item" data-event-opts="{{[ [ 'tap',[ [ 'openCatalog',['$event'] ] ] ] ]}}">
+        <view class="bottom-nav-icon icon-b-catalog"></view>
+        <view class="bottom-nav-text">目录</view>
+    </view>
+    <view bindtap="__e" class="bottom-nav-item" data-event-opts="{{[ [ 'tap',[ [ 'openSearch',['$event'] ] ] ] ]}}">
+        <view class="bottom-nav-icon icon-b-search"></view>
+        <view class="bottom-nav-text">查找</view>
+    </view>
+    <view bindtap="__e" class="bottom-nav-item" data-event-opts="{{[ [ 'tap',[ [ 'openShare',['$event'] ] ] ] ]}}">
+        <view class="bottom-nav-icon icon-b-share"></view>
+        <view class="bottom-nav-text">分享</view>
+    </view>
+</view>

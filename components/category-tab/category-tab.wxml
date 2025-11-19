@@ -1,0 +1,5 @@
+<view class="category-tab">
+    <view class="tab-panel">
+        <view bindtap="__e" class="{{['tab-item',item.value==currentTab?'tab-item-active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleTab',['$0'],[ [ ['tabList','value',item.value] ] ] ] ] ] ]}}" value="{{item.value}}" wx:for="{{tabList}}" wx:for-index="__i0__" wx:key="value">{{''+item.label+''}}</view>
+    </view>
+</view>

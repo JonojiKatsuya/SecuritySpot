@@ -1,0 +1,11 @@
+<view class="drop-menu">
+    <view catchtap="__e" class="drop-btn" data-event-opts="{{[ [ 'tap',[ [ 'togglePanel',['$event'] ] ] ] ]}}">
+        <view class="drop-btn-box">
+            <text>{{currentMenu.label}}</text>
+            <text class="icon-drop-btn"></text>
+        </view>
+    </view>
+    <view class="{{['drop-panel',isShowPanel?'open-panel':'close-panel']}}">
+        <view bindtap="__e" class="{{['drop-item',item.value===activeMenu?'drop-item-highlight':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleSelect',['$0'],[ [ ['menuList','',index] ] ] ] ] ] ]}}" wx:for="{{menuList}}" wx:key="index">{{''+item.label+''}}</view>
+    </view>
+</view>

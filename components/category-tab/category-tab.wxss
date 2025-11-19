@@ -1,0 +1,60 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.tab-panel {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.tab-item {
+    background-color: #eee;
+    border-radius: 30rpx;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 1.2;
+    margin: 0 35rpx 10rpx 0;
+    padding: 12rpx 0;
+    text-align: center;
+    width: 118rpx
+}
+
+.tab-item-active {
+    background: #9b0000;
+    border-radius: 30rpx;
+    color: #fff
+}

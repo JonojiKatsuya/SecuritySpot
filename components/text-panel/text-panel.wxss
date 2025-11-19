@@ -1,0 +1,32 @@
+.text-panel {
+    background-color: #fff;
+    bottom: 120rpx;
+    height: 140rpx;
+    left: 0;
+    position: fixed;
+    width: 100%
+}
+
+.tips-font {
+    color: #333;
+    font-size: $uni-size-md
+}
+
+.tips-small {
+    left: 14%;
+    position: absolute;
+    top: 0
+}
+
+.tips-middle {
+    left: 50%;
+    margin: 0 0 0 -7rpx;
+    position: absolute;
+    top: 0
+}
+
+.tips-large {
+    left: 84%;
+    position: absolute;
+    top: 0
+}

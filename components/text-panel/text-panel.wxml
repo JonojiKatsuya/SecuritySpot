@@ -1,0 +1,8 @@
+<view class="text-panel">
+    <slider activeColor="#9b0000" bindchange="__e" blockSize="12" data-event-opts="{{[ [ 'change',[ [ 'handleSlideChange',['$event'] ] ] ] ]}}" step="50" value="{{value}}"></slider>
+    <view style="position:relative;">
+        <view class="tips-small tips-font">小</view>
+        <view class="tips-middle tips-font">中</view>
+        <view class="tips-large tips-font">大</view>
+    </view>
+</view>

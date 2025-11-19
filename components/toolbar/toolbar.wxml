@@ -1,0 +1,8 @@
+<view class="toolbar">
+    <view bindtap="__e" class="toolbar-item icon-home" data-event-opts="{{[ [ 'tap',[ [ 'backToHome',['$event'] ] ] ] ]}}" wx:if="{{!pages}}"></view>
+    <view bindtap="__e" class="toolbar-item icon-text" data-event-opts="{{[ [ 'tap',[ [ 'openTextPanel',['$event'] ] ] ] ]}}" wx:if="{{!pages}}"></view>
+    <view bindtap="__e" class="toolbar-item icon-link" data-event-opts="{{[ [ 'tap',[ [ 'copyLink',['$event'] ] ] ] ]}}" wx:if="{{!pages}}"></view>
+    <view bindtap="__e" class="toolbar-item icon-voice" data-event-opts="{{[ [ 'tap',[ [ 'playVideo',['$event'] ] ] ] ]}}" wx:if="{{false}}"></view>
+    <view bindtap="__e" class="{{['toolbar-item',isCollected?'icon-collect-true':'icon-collect-false']}}" data-event-opts="{{[ [ 'tap',[ [ 'openCollectPanel',['$event'] ] ] ] ]}}" wx:if="{{!pages}}"></view>
+    <view bindtap="__e" class="toolbar-item icon-top" data-event-opts="{{[ [ 'tap',[ [ 'backToTop',['$event'] ] ] ] ]}}" wx:if="{{showBackTop}}"></view>
+</view>

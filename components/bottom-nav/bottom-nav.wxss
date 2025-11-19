@@ -1,0 +1,73 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.bottom-nav {
+    background: #fff;
+    bottom: 0;
+    box-shadow: 0 0 5px #d3e2e2;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    padding: 22rpx 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2
+}
+
+.bottom-nav .bottom-nav-item {
+    color: #666;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 28rpx;
+    text-align: center
+}
+
+.bottom-nav .bottom-nav-item .bottom-nav-icon {
+    height: 40rpx;
+    margin: 0 auto;
+    width: 40rpx
+}
+
+.bottom-nav .bottom-nav-item .icon-b-catalog {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAAAyMjIzMzMzMzMzMzMzMzMzMzMzMzMzMzMyMjIzMzMzMzMzMzMzMzMzMzMzMzMyMjI5OTk5OTkxMTEzMzN5qusYAAAAFHRSTlMAf79snKxX5dQkTT3MpJV3WxIJFSLN4sUAAABvSURBVEjH7dJLCoAwEAPQ1n5t1frJ/c8q2u5mQHSlOG8TCGQXJT5Oh3E9M4LhPBlEwB4ZwHJkYAFfk2XIoDe5pWbMixLvpOPNL4UHX0rypT9Ik2nZMUomgwEoNVmWDFz7SweWJgPvarexX/JKiAs7PzsQxBg40UcAAAAASUVORK5CYII=);
+    background-size: 100% 100%
+}
+
+.bottom-nav .bottom-nav-item .icon-b-search {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFEElEQVRoQ+1Ya4hVVRT+1mFmfkj96fXLaooghAru3tsUJkSJAkWzsHdWlpOSJWkPwQoy6EGG2otsLHuhaIaFPQxKyR4w3WavfWciDPGHRmWkvag/Us5ZsYd95Xi5j7OPMzTCbLg/Ludb31rfWufsvfYinOCLTvD4MSbg/67gWAV8BYwxFwA4F8Bp/pemqQA4lCTJwcHBwb5KpXJopCpVuAJKKQ3gKiKaDcALaLY+BLAdwLvM/PNwiokW4ANPkmSBiCwoEMgBEXmZiHqGS0iUAK31NQC21AmcReQDAAf8L0mSRETGi8gEIpoJoLPGZp+ILHfOvVUgCceY5BaglJpHRK/VOFwlIuudc981C0QpNTNUbVYN7j5mXn08InIJUEqtIKJHqo6IaOfg4OCTlUplZ4xzY8wcEekBcGrVTkRmOed89QqtlgKUUkuIaE2G/VlmXlLIWzDSWn8KYGomIZOstV8X4WwqQGs9CcBXGeK3mfnaIo5qbWpEOACTmfnfWO5WAjYAuCmQbmPmK2MdNMIbY0oi8jmAkwKm0PfQUIAxZrqI+L3br38ATGHm8nAJ8Dxa6+UAngic+9va2iaXy+VfYnw0FKC1fgXAfE8mIo8651bEEOfFaq2t1xLwi5h5bV5bj2smYF9m//bv57BmvxqkUmqBP9hCorY6564+bgFa6wsBfBOIysw8OYY0Fqu1PgjgdAB/MPMpMfZ1K2CMuUJEtoWsrHHO3RtDGovN7khJkpzV19f3Q16ORgJu9yfs0DtGdKO1dlNewiI4pdRqIloa/F1urf0kL08jActE5KlAONta+15ewiK47ElPRIuttS/k5akrQCn1ABGtDCR3MfOLeQmL4GpalSh/jQRkG7dVzHx/kcDy2mitfZM4L1R8mrV2V17bRq/QDBHxlxC/djHztLyERXBa6wEAF3nbNE3PiLnB1RVQKpXOTpJkfwjm746Ojs7e3t7fiwTXykYpdR4R7Q2475m59u7QlKLZQbYbwISwlc51zm1sFUyR51rrxQCeC6/PBmvtzTE8zQSsA3BHINvIzHNjiPNilVLbiWh6SNRC55z3m3s1a+YuE5GPq0xENMNa+1Fu5hzAmmZuD4BLmPnXHKZHIU3baaXU80R0d0B/wcxTYsibYUul0qVJkuzIJGi+tfbVWP6mAiZOnHhmmqafATgnlHhHe3v7beVy+cdYR1l8V1fXyYcPH/4rE/w71to5RTjzXCmvI6LNGfJvAXQX7U6NMVNFxF8pj64jR46MHxgY+GlEBHhSrbVv5lZlHPxGRAuttVtjnGZb50z2ow6uWn8tK1A18KMRIno/S+D/p2m6Lk3TL/v7+/+sJybs836XuTVzcRmCElG3tXa9MaYnTdNe59zrMQkZ4ogxMMZcLCIvASjVsesHsFdEhr4PIhoP4PzqCVuD35am6YOVSmW31toPyvzAzN/8HnfOPRwTU5SA8DqNExHf7C0DMC7GGYA9vknM7ja1AzMietpa67lzrWgBVVY/VUjTdE7kcHdLvX1eKfUYET2UiTj37KmwgGx6hmO8boxZ6Sub4V3LzItalWFYBLRykve51voZAPdk8OuZubuZ/agSEL4xf3m6MxP0m8zsd7C6a9QJCCKOzqTC7rTZOXdDPQWjUkAQ8QaAW6pBi8hS55x/xY5Zo1aAj1IptYmIrg9VqDsdHNUCggh/V+5sb29fW29uOuoFtNrBxgS0ytBIPx+rwEhnuBX/f6wD+0AtVWyDAAAAAElFTkSuQmCC);
+    background-size: 100% 100%
+}
+
+.bottom-nav .bottom-nav-item .icon-b-share {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAS1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmYDp0AAAAGHRSTlMAv4CquYkZ8plA2G1SSiWNeGJV6dXGORAfwhSEAAAA60lEQVRIx+2V2a6CMBRFT2sHKoPDHdz//6UWxJzaivvVGNdTSdYqJQGOvDFhtKbkmOTGwa3En4MoHjWdLCQoUf09Gqws/D8NzHzlbMlZVk5+ZtnxT1Z6AG6SF+wwY+7Pu5yY+b8aDEAMzN9ZDXxeUl+KwACW+nXA/CYgfhtQXy7AiQfqZ4KQQH1FA+LTQH0acF8D7mvA/Dbgvj2mIuD+Geg2g1T5/NUwlU8DScKCmm/wgUFeOh443XYE4sT8KQJj8bt3/AZAKAdcF17pocuKfxxx0dhNTMzCvvqsCfUI6ZnfN6ccvNnED0Helys3uCIVCk9dCwAAAABJRU5ErkJggg==);
+    background-size: 100% 100%
+}

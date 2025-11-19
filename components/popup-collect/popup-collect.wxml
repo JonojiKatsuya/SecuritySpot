@@ -1,0 +1,20 @@
+<view class="popup-collect">
+    <view class="popup-wrapper">
+        <view class="popup-header">
+            <view class="popup-title">选择收藏夹</view>
+            <view bindtap="__e" class="popup-add" data-event-opts="{{[ [ 'tap',[ [ 'linkToCollect',['$event'] ] ] ] ]}}">添加收藏夹</view>
+        </view>
+        <view class="popup-body">
+            <scroll-view class="popup-list" scrollY="true">
+                <view bindtap="__e" class="popup-list-item" data-event-opts="{{[ [ 'tap',[ [ 'handleCollect',['$0'],[ [ ['collectList','',index] ] ] ] ] ] ]}}" wx:for="{{collectList}}" wx:key="index">
+                    <image mode class="list-item-icon" src="../../static/detail/icon_book.png"></image>
+                    <view class="list-item-content">{{''+item.folderName+''}}</view>
+                    <view class="{{['list-item-select',activeCollect==item.collectFolderId?'list-item-select-active':'']}}"></view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="popup-footer">
+            <button bindtap="__e" class="popup-submit" data-event-opts="{{[ [ 'tap',[ [ 'saveCollect',['$event'] ] ] ] ]}}">保存</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="popup-condition">
+    <view class="popup-input">
+        <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','conditionValue','$event',[] ] ] ] ] ]}}" maxlength="20" placeholder="请输入条件名称" type="text" value="{{conditionValue}}"></input>
+    </view>
+    <view class="popup-handle">
+        <view bindtap="__e" class="cancel-btn" data-event-opts="{{[ [ 'tap',[ [ 'handleCancel',['$event'] ] ] ] ]}}">取消</view>
+        <view bindtap="__e" class="save-btn" data-event-opts="{{[ [ 'tap',[ [ 'handleSave',['$event'] ] ] ] ]}}">保存</view>
+    </view>
+</view>

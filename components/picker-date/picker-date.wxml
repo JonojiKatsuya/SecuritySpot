@@ -1,0 +1,6 @@
+<view class="container data-v-5368b927">
+    <picker bindchange="__e" class="data-v-5368b927" data-event-opts="{{[ [ 'change',[ [ 'bindDateChange',['$event'] ] ] ] ]}}" end="{{endDate}}" mode="date" start="{{startDate}}" value="{{value}}">
+        <view class="{{['picker-input','data-v-5368b927',!value?'picker-placeholder':'']}}">{{''+(value||placeholder)+''}}</view>
+    </picker>
+    <image class="icon-more data-v-5368b927" mode="aspectFill" src="/static/cause/icon_more@2x.png" wx:if="{{isShowArrow}}"></image>
+</view>

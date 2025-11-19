@@ -1,0 +1,16 @@
+<view class="{{['uni-forms-item','data-v-6be8a0f6',border?'uni-forms-item--border':'',border&&isFirstBorder?'is-first-border':'',msg?'uni-forms-item-error':'']}}">
+    <view class="{{['uni-forms-item__inner','data-v-6be8a0f6','is-direction-'+labelPos]}}">
+        <view class="uni-forms-item__label data-v-6be8a0f6" style="{{'width:'+labelWid+'px'+';'+'justify-content:'+justifyContent+';'}}" wx:if="{{label}}">
+            <slot name="left" wx:if="{{$slots.left}}"></slot>
+            <block wx:else>
+                <uni-icons bind:__l="__l" class="label-icon data-v-6be8a0f6" color="{{iconColor}}" size="16" type="{{leftIcon}}" vueId="249e17fc-1" wx:if="{{leftIcon}}"></uni-icons>
+                <text class="data-v-6be8a0f6">{{label}}</text>
+                <text class="is-required data-v-6be8a0f6" wx:if="{{required}}">*</text>
+            </block>
+        </view>
+        <view class="{{['uni-forms-item__content','data-v-6be8a0f6',msg?'is-input-error-border':'']}}">
+            <slot></slot>
+        </view>
+    </view>
+    <view class="{{['uni-error-message','data-v-6be8a0f6',border?'uni-error-msg--boeder':'']}}" style="{{'padding-left:'+(labelPos==='left'?$root.m0+5:5)+'px'+';'}}">{{showMsg==='undertext'?msg:''}}</view>
+</view>

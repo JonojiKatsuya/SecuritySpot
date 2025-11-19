@@ -1,0 +1,79 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.search-bar {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 16rpx;
+    color: #333;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 0 30rpx;
+    position: relative
+}
+
+.search-bar-active {
+    border: 1px solid #9b0000
+}
+
+.search-bar wx-input {
+    font-size: 32rpx
+}
+
+.search-bar wx-input,.search-mask {
+    -webkit-flex: 1;
+    flex: 1;
+    height: 114rpx;
+    line-height: 114rpx;
+    padding: 0 24rpx
+}
+
+.search-mask {
+    font-size: 24rpx
+}
+
+.search-voice {
+    -webkit-flex: 0 1 24rpx;
+    flex: 0 1 24rpx;
+    height: 30rpx;
+    margin: 0 24rpx 0 16rpx;
+    width: 24rpx
+}
+
+.search-btn {
+    color: #9b0000;
+    -webkit-flex: 0 1 140rpx;
+    flex: 0 1 140rpx;
+    font-size: 32rpx
+}

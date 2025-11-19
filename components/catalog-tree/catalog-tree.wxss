@@ -1,0 +1,83 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.catalog-tree {
+    padding: 150rpx 0 0
+}
+
+.catalog-title {
+    color: #333;
+    font-size: 28rpx;
+    height: 30rpx;
+    padding: 21rpx 0
+}
+
+.catalog-list {
+    height: 78vh
+}
+
+.catalog-list-item {
+    height: 27rpx;
+    margin: 0 0 0 24rpx;
+    overflow: hidden;
+    padding: 36rpx 0
+}
+
+.catalog-item-active {
+    height: auto
+}
+
+.list-lv1 {
+    color: #333;
+    font-size: 28rpx;
+    margin: 0
+}
+
+.list-lv2 {
+    color: #999;
+    font-size: 26rpx
+}
+
+.list-lv3 {
+    color: #999;
+    font-size: 24rpx
+}
+
+.list-lv4 {
+    color: #999;
+    font-size: 22rpx
+}
+
+.list-lv5 {
+    color: #999;
+    font-size: 20rpx
+}

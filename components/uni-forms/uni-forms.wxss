@@ -1,0 +1,35 @@
+wx-button.base.data-v-68b6239e {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base.data-v-68b6239e:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default.data-v-68b6239e {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default.data-v-68b6239e:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder.data-v-68b6239e {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked.data-v-68b6239e {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.uni-forms.data-v-68b6239e {
+    overflow: hidden
+}

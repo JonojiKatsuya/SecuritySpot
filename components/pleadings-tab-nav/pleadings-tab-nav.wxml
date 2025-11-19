@@ -1,0 +1,9 @@
+<view class="{{['custom-tabs','data-v-2a23d308',customClass]}}">
+    <view class="tabs-nav scrollable data-v-2a23d308">
+        <view bindtap="__e" class="{{['tab-item','data-v-2a23d308',currentIndex===index?'active':'',tab.disabled?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'handleTabClick',[index] ] ] ] ]}}" wx:for="{{tabs}}" wx:for-item="tab" wx:key="index">{{''+tab.title+''}}<view class="underline data-v-2a23d308" wx:if="{{currentIndex===index}}"></view>
+        </view>
+    </view>
+    <view class="tab-content data-v-2a23d308">
+        <slot name="{{'tab-'+currentIndex}}"></slot>
+    </view>
+</view>

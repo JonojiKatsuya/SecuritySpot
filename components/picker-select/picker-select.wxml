@@ -1,0 +1,6 @@
+<view class="container data-v-6d0d45ba">
+    <picker bindchange="__e" class="data-v-6d0d45ba" data-event-opts="{{[ [ 'change',[ [ 'bindPickerChange',['$event'] ] ] ] ]}}" mode="selector" range="{{range}}" rangeKey="text">
+        <view class="{{['picker-input','data-v-6d0d45ba',!selectedText?'picker-placeholder':'']}}">{{''+(selectedText||placeholder)+''}}</view>
+    </picker>
+    <image class="icon-more data-v-6d0d45ba" mode="aspectFill" src="/static/cause/icon_more@2x.png"></image>
+</view>

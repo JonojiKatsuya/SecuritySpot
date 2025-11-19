@@ -1,0 +1,79 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+.popup-condition {
+    background-color: #fff;
+    padding: 50rpx 30rpx;
+    width: 450rpx
+}
+
+.popup-input {
+    margin: 30rpx 0
+}
+
+.popup-input wx-input {
+    border: 1px solid #c4c4c4;
+    border-radius: 30rpx;
+    font-size: 28rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 5rpx 20rpx
+}
+
+.popup-handle {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.popup-handle .cancel-btn {
+    background-color: #fff;
+    border: 1px solid #9b0000;
+    color: #333
+}
+
+.popup-handle .cancel-btn,.popup-handle .save-btn {
+    border-radius: 30rpx;
+    font-size: 28rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    width: 140rpx
+}
+
+.popup-handle .save-btn {
+    background-color: #9b0000;
+    color: #fff
+}

@@ -1,0 +1,5 @@
+<view class="{{['search-bar',isActive?'search-bar-active':'']}}">
+    <view class="search-mask" wx:if="{{searchable}}">请输入 案由、基本事实、争议焦点、法律适用</view>
+    <input bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" confirmType="search" data-event-opts="{{[ [ 'confirm',[ [ 'handleEnterSearch',['$event'] ] ] ],[ 'focus',[ [ 'handleFocus',['$event'] ] ] ],[ 'blur',[ [ 'handleBlur',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','searchValue','$event',[] ] ] ] ] ]}}" focus="{{isFocus}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" type="text" value="{{searchValue}}" wx:else></input>
+    <view bindtap="__e" class="search-btn" data-event-opts="{{[ [ 'tap',[ [ 'handleSearch',['$event'] ] ] ] ]}}">丨 搜索</view>
+</view>

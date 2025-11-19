@@ -1,0 +1,18 @@
+<view class="search-condition">
+    <view class="search-condition-list" wx:if="{{isShowCondition}}">
+        <view class="search-condition-item" wx:if="{{searchValue}}">{{''+searchValue+''}}<view bindtap="__e" class="icon-close" data-event-opts="{{[ [ 'tap',[ [ 'clearConditoin',['searchValue'] ] ] ] ]}}"></view>
+        </view>
+        <view class="search-condition-item" wx:if="{{searchCourt}}">{{''+searchCourt+''}}<view bindtap="__e" class="icon-close" data-event-opts="{{[ [ 'tap',[ [ 'clearConditoin',['searchCourt'] ] ] ] ]}}"></view>
+        </view>
+        <view class="search-condition-item" wx:if="{{searchDocType}}">{{''+searchDocType+''}}<view bindtap="__e" class="icon-close" data-event-opts="{{[ [ 'tap',[ [ 'clearConditoin',['searchDocType'] ] ] ] ]}}"></view>
+        </view>
+    </view>
+    <view class="search-condition-handle" wx:if="{{isShowCondition}}">
+        <view bindtap="__e" class="search-condition-clear" data-event-opts="{{[ [ 'tap',[ [ 'clearAllCondition',['$event'] ] ] ] ]}}">
+            <view class="icon-clear"></view>清空</view>
+        <view bindtap="__e" class="search-condition-save" data-event-opts="{{[ [ 'tap',[ [ 'saveCondition',['$event'] ] ] ] ]}}">保存条件</view>
+    </view>
+    <uni-popup bind:__l="__l" class="vue-ref" data-ref="popupsearchcond" maskClick="{{false}}" type="center" vueId="d170947c-1" vueSlots="{{['default']}}">
+        <popup-condition bind:__l="__l" bind:returnCancel="__e" bind:returnCondition="__e" class="vue-ref" data-event-opts="{{[ [ '^returnCancel',[ ['returnCancel'] ] ],[ '^returnCondition',[ ['returnCondition'] ] ] ]}}" data-ref="popupCondition" vueId="{{'d170947c-2'+','+'d170947c-1'}}"></popup-condition>
+    </uni-popup>
+</view>

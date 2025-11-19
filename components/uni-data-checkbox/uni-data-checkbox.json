@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "uni-load-more": "components\\uni-data-checkbox\\components\\uni-load-more\\uni-load-more"
+  },
+  "component": true
+}
