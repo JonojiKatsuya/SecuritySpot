@@ -1,0 +1,66 @@
+wx-button.base {
+    background: #9b0000;
+    color: #fff;
+    line-height: 74rpx
+}
+
+wx-button.base:active {
+    background: #820404;
+    color: #fff
+}
+
+wx-button.default {
+    background: #fff;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 60rpx
+}
+
+wx-button.default:active {
+    background: #f8f8f8
+}
+
+wx-input .input-placeholder {
+    color: #666!important;
+    font-size: 24rpx
+}
+
+wx-uni-radio .uni-radio-input.uni-radio-input-checked {
+    background: #9b0000!important;
+    border-color: #9b0000!important
+}
+
+body::after {
+    -webkit-animation: shadow-preload .1s;
+    -webkit-animation-delay: 3s;
+    animation: shadow-preload .1s;
+    animation-delay: 3s;
+    content: "";
+    left: -1000px;
+    position: fixed;
+    top: -1000px
+}
+
+@-webkit-keyframes shadow-preload {
+    0% {
+        background-image: url(https://cdn1.dcloud.net.cn/516a55784d4455324d69556c643367315a544a6d4d5459345a5467304f445a6d4d7a426b/img/shadow-grey.png)
+    }
+
+    100% {
+        background-image: url(https://cdn1.dcloud.net.cn/516a55784d4455324d69556c643367315a544a6d4d5459345a5467304f445a6d4d7a426b/img/shadow-grey.png)
+    }
+}
+
+@keyframes shadow-preload {
+    0% {
+        background-image: url(https://cdn1.dcloud.net.cn/516a55784d4455324d69556c643367315a544a6d4d5459345a5467304f445a6d4d7a426b/img/shadow-grey.png)
+    }
+
+    100% {
+        background-image: url(https://cdn1.dcloud.net.cn/516a55784d4455324d69556c643367315a544a6d4d5459345a5467304f445a6d4d7a426b/img/shadow-grey.png)
+    }
+}
+
+[bind-data-custom-hidden="true"],[data-custom-hidden="true"] {
+    display: none!important
+}

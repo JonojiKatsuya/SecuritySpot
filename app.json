@@ -1,0 +1,76 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/poster/poster",
+    "pages/transfer/transfer",
+    "pages/search/search",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/mfd/mfd",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/user/user",
+    "pages/user/collection",
+    "pages/user/search_his",
+    "pages/user/about",
+    "pages/user/collection_list",
+    "pages/user/collection_edit",
+    "pages/user/service",
+    "pages/user/bind_account",
+    "pages/user/bind_status",
+    "pages/user/condition",
+    "pages/findCases/findCases",
+    "pages/index/causeSelection",
+    "pages/index/causeTemplate",
+    "pages/index/causeForm/causeFormLoan",
+    "pages/index/causeForm/causeFormDivorce",
+    "pages/index/causeForm/causeFormLabor",
+    "pages/index/causeForm/causeFormSales",
+    "pages/index/causeForm/causeFormFinance",
+    "pages/index/causeForm/causeFormProperty",
+    "pages/index/causeForm/causeFormCreditCard",
+    "pages/index/causeForm/causeFormTraffic",
+    "pages/index/causeForm/causeFormLease",
+    "pages/index/causeForm/causeFormInsurance",
+    "pages/index/causeForm/causeFormSecurity",
+    "pages/index/causeForm/causeFormCommon",
+    "pages/index/causePreview",
+    "pages/index/causeHistory"
+  ],
+  "tabBar": {
+    "selectedColor": "#1967DD",
+    "color": "#757575",
+    "list": [
+      {
+        "text": "写诉状",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/user/icon_home_def_v2@2x.png",
+        "selectedIconPath": "static/user/icon_home_v2@2x.png"
+      },
+      {
+        "text": "找类案",
+        "pagePath": "pages/findCases/findCases",
+        "iconPath": "static/user/icon_findCases_def_v2@2x.png",
+        "selectedIconPath": "static/user/icon_findCases_v2@2x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/user/icon_user_def_v2@2x.png",
+        "selectedIconPath": "static/user/icon_user_v2@2x.png"
+      }
+    ]
+  },
+  "renderer": "webview",
+  "componentFramework": "exparser",
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "法宝类案",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": true
+  },
+  "plugins": {}
+}
